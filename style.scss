@@ -15,7 +15,7 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    max-width: $widthImage;
 }
 
 a {
@@ -28,27 +28,27 @@ a {
 }
 
 .header {
-    background: $backHead;
-    color: $colorHead;
+    background: $backHeader;
+    color: $colorHeader;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 18px 32px;
+    padding: $paddingNavigat;
 
     &__left {
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        gap: 41px;
+        gap: $gapNavigatLeft;
     }
 
     &__right {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 33px;
+        gap: $gapNavigatRight;
     }
 
     &__left button,
@@ -79,52 +79,50 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 19px;
-        height: 19px;
+        width: $widthBasket;
+        height: $heightBasket;
         background-color: $colorBasket;
-        border-radius: 25px 25px 25px 25px;
-        top: -8px;
-        right: -10px;
+        border-radius: $bordRadBasket;
+        top: $topBasket;
+        right: $rightBasket;
     }
 }
 
 .banner {
-    margin-bottom: 65px;
+    margin-bottom: $marginBanner;
     display: flex;
     align-items: center;
     background: $backgroundBanner;
-    width: 100%;
+    width: $widthBanner;
 
     &__img {
-        width: 50%;
+        width: $widthImgBanner;
     }
 
     &__content {
-        padding-left: 64px;
+        padding-left: $paddingContBanner;
 
         & h1 h2 {
-            color: $backHead;
+            color: $colorContBanner;
         }
 
         &-title {
-            font-weight: 900;
-            font-size: 48px;
-            line-height: 58px;
+            font-weight: $fwidthTitleBanner;
+            font-size: $fsizeTitleBanner;
+            line-height: $lheightTitleBanner;
         }
 
         &-heading {
-            font-weight: 700;
-            font-size: 32px;
-            line-height: 38px;
+            font-weight: $fwidthHeadingBanner;
+            font-size: $fsizeHeadingBanner;
+            line-height: $lheightHeadingBanner;
         }
     }
 
     &__info {
-        border-left: 12px solid $colortextBanner;
-        padding-left: 19px;
+        border-left: 12px solid $colortextInfoBanner;
+        padding-left: $paddingInfoBanner;
     }
-
-
 }
 
 .hiden {
@@ -132,48 +130,48 @@ a {
 }
 
 .menu-active {
-    padding: 32px;
-    padding-left: 33px;
+    padding: $paddingMenuActiv;
+    padding-left: $paddingLeftMenuActiv;
     position: absolute;
-    top: 74px;
-    right: 0;
-    background: $backgMenu;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    top: $topMenuActiv;
+    right: $rightMenuActiv;
+    background: $backgMenuActiv;
+    box-shadow: $boxMenuActiv;
 
     &__all {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: $gapMenuActiv;
     }
 }
 
 .menu-heading {
-    margin-bottom: 24px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorMenu;
+    margin-bottom: $mbMenuHead;
+    font-weight: $fwidthMenuHead;
+    font-size: $fsizeMenuHead;
+    line-height: $lheightMenuHead;
+    color: $colorMenuHead;
 }
 
 .menu-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colortextMenu;
-    margin-bottom: 12px;
+    font-weight: $fwidthMenuText;
+    font-size: $fsizeMenuText;
+    line-height: $lheightMenuText;
+    color: $colorMenuText;
+    margin-bottom: $mbMenuText;
 }
 
 .menu-list {
-    padding-left: 20px;
+    padding-left: $paddingMenuList;
     display: flex;
     flex-direction: column;
-    gap: 11px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    gap: $gapMenuList;
+    font-weight: $fwidthMenuLis;
+    font-size: $fsizeMenuList;
+    line-height: $lheightMenuList;
 
     & a {
-        color: #6F6E6E;
+        color: $colorMenuList;
     }
 }
 
@@ -182,10 +180,10 @@ a {
 }
 
 .category {
-    margin-bottom: 96px;
+    margin-bottom: $mbCategory;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: $gapCategory;
 
     &__catalogs {
         flex: 1 1 calc(33.333% - 20px);
