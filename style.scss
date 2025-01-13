@@ -9,13 +9,13 @@
 
 body {
     scroll-behavior: smooth;
-    background: $backBody;
+    background: $backgrSite;
     font-family: "Lato", sans-serif;
 }
 
 img {
     display: block;
-    max-width: $widthImage;
+    max-width: 100%;
 }
 
 a {
@@ -28,14 +28,14 @@ a {
 }
 
 .header {
-    background: $backHeader;
+    background: $backgroundSite;
     color: $colorHeader;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: $paddingNavigat;
+    padding: 18px 32px;
 
     &__left {
         display: flex;
@@ -79,49 +79,49 @@ a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: $widthBasket;
-        height: $heightBasket;
-        background-color: $colorBasket;
-        border-radius: $bordRadBasket;
-        top: $topBasket;
-        right: $rightBasket;
+        width: 19px;
+        height: 19px;
+        background-color: $colorfooltext;
+        border-radius: 25px 25px 25px 25px;
+        top: -8px;
+        right: -10px;
     }
 }
 
 .banner {
-    margin-bottom: $marginBanner;
+    margin-bottom: 65px;
     display: flex;
     align-items: center;
     background: $backgroundBanner;
-    width: $widthBanner;
+    width: 100%;
 
     &__img {
-        width: $widthImgBanner;
+        width: 50%;
     }
 
     &__content {
-        padding-left: $paddingContBanner;
+        padding-left: 64px;
 
         & h1 h2 {
-            color: $colorContBanner;
+            color: $colorContent;
         }
 
         &-title {
-            font-weight: $fwidthTitleBanner;
-            font-size: $fsizeTitleBanner;
-            line-height: $lheightTitleBanner;
+            font-weight: 900px;
+            font-size: 48px;
+            line-height: 58px;
         }
 
         &-heading {
-            font-weight: $fwidthHeadingBanner;
-            font-size: $fsizeHeadingBanner;
-            line-height: $lheightHeadingBanner;
+            font-weight: 700px;
+            font-size: 32px;
+            line-height: 38px;
         }
     }
 
     &__info {
-        border-left: 12px solid $colortextInfoBanner;
-        padding-left: $paddingInfoBanner;
+        border-left: 12px solid $colorfooltext;
+        padding-left: 19px;
     }
 }
 
@@ -130,12 +130,12 @@ a {
 }
 
 .menu-active {
-    padding: $paddingMenuActiv;
-    padding-left: $paddingLeftMenuActiv;
+    padding: 32px;
+    padding-left: 33pxv;
     position: absolute;
-    top: $topMenuActiv;
-    right: $rightMenuActiv;
-    background: $backgMenuActiv;
+    top: 74px;
+    right: 0;
+    background: $backgrSite;
     box-shadow: $boxMenuActiv;
 
     &__all {
@@ -146,29 +146,29 @@ a {
 }
 
 .menu-heading {
-    margin-bottom: $mbMenuHead;
-    font-weight: $fwidthMenuHead;
-    font-size: $fsizeMenuHead;
-    line-height: $lheightMenuHead;
+    margin-bottom: 24px;
+    font-weight: 700px;
+    font-size: 14px;
+    line-height: 17px;
     color: $colorMenuHead;
 }
 
 .menu-text {
-    font-weight: $fwidthMenuText;
-    font-size: $fsizeMenuText;
-    line-height: $lheightMenuText;
-    color: $colorMenuText;
-    margin-bottom: $mbMenuText;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorfooltext;
+    margin-bottom: 12px;
 }
 
 .menu-list {
-    padding-left: $paddingMenuList;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     gap: $gapMenuList;
-    font-weight: $fwidthMenuLis;
-    font-size: $fsizeMenuList;
-    line-height: $lheightMenuList;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17px;
 
     & a {
         color: $colorMenuList;
@@ -176,11 +176,11 @@ a {
 }
 
 .colortext {
-    color: $colortextBanner;
+    color: $colorfooltext;
 }
 
 .category {
-    margin-bottom: $mbCategory;
+    margin-bottom: 96px;
     display: flex;
     flex-wrap: wrap;
     gap: $gapCategory;
@@ -216,8 +216,7 @@ a {
     }
 
     &__catalog-darkening {
-        background: rgba(33, 22, 22, 0.7);
-        width: 100%;
+        background: $backgrCategory;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -225,7 +224,7 @@ a {
     }
 
     &__catalog__darkening-4 {
-        background: rgba(33, 22, 22, 0.7);
+        background: $backgrCategory;
         width: 100%;
         height: 100%;
         display: flex;
@@ -238,11 +237,11 @@ a {
         font-size: 16px;
         line-height: 19px;
         text-align: center;
-        color: #FFFFFF;
+        color: $colorText;
     }
 
     &__catalog-colortext {
-        color: $colortextCatatlog;
+        color: $colorfooltext;
         font-size: 24px;
     }
 }
@@ -258,13 +257,13 @@ a {
             margin-bottom: 6px;
             font-size: 30px;
             line-height: 36px;
-            color: $colorfeatured;
+            color: $colorContent;
         }
 
         &-week {
             font-size: 14px;
             line-height: 17px;
-            color: #9F9F9F;
+            color:$colorProductWeek;
             margin-bottom: 48px;
         }
     }
@@ -274,11 +273,11 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
+    gap: $gapProduct;
     margin-bottom: 48px;
 
     &__card {
-        background: #F8F8F8;
+        background: $backgroundCard;
 
         &-image {
             position: relative;
@@ -322,8 +321,8 @@ a {
         width: 139px;
         height: 44px;
         background: none;
-        color: #ffffff;
-        border: 1px solid #ffffff;
+        color: $colorText;
+        border: 1px solid $colorText;
         font-weight: 400;
         font-size: 14px;
         cursor: pointer;
@@ -339,7 +338,7 @@ a {
             font-weight: 400;
             font-size: 13px;
             line-height: 16px;
-            color: #000000;
+            color: $colorContentName;
         }
 
         &-description {
@@ -347,14 +346,14 @@ a {
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
-            color: #5D5D5D;
+            color: $colorContentDescript;
         }
 
         &-price {
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
-            color: #F16D7F;
+            color: $colorfooltext;
         }
     }
 
@@ -365,27 +364,27 @@ a {
 
         &-bot {
             padding: 15px 39px 14px 39px;
-            border: 1px solid #FF6A6A;
+            border: $borderBtm;
             display: block;
             font-weight: 400;
             font-size: 16px;
             line-height: 19px;
             background: none;
-            color: #F26376;
+            color: $colorBtmBot;
             cursor: pointer;
             transition: all 0.3s;
         }
 
         &-bot:hover {
-            background-color: #F26376;
-            color: #FFFFFF;
+            background-color: $colorBtmBot;
+            color: $colorModified;
         }
     }
 }
 
 .information {
     padding: 104px 230px;
-    background: #222224;
+    background: $backgroundInform;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -396,7 +395,7 @@ a {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        color: #FBFBFB;
+        color: $colorInform;
 
         &-icon {
             margin-bottom: 26px;
@@ -417,7 +416,7 @@ a {
             font-weight: 300;
             font-size: 14px;
             line-height: 17px;
-            color: #FBFBFB;
+            color: $colorInform;
         }
     }
 }
@@ -428,7 +427,7 @@ a {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    color: #222224;
+    color: $colorSubscript;
     background-image: url(./img/subscribe_image.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -510,8 +509,8 @@ a {
             line-height: 17px;
             display: flex;
             align-items: center;
-            background: #E1E1E1;
-            color: #222224;
+            background: $backgroundText;
+            color: $colorSubscript;
             opacity: 0.67;
             border-radius: 25px 0 0 25px;
         }
@@ -524,8 +523,8 @@ a {
             border: none;
             display: flex;
             align-items: center;
-            background: #F16D7F;
-            color: #FFFFFF;
+            background: $colorfooltext;
+            color: $colorText;
             border-radius: 0 25px 25px 0;
             cursor: pointer;
         }
@@ -534,7 +533,7 @@ a {
             width: 160px;
             height: 30px;
             border: none;
-            background: #E1E1E1;
+            background: $backgroundTex;
         }
     }
 }
@@ -543,7 +542,7 @@ a {
     max-width: 1600px;
     max-height: 79px;
     margin: 0 auto;
-    background: #222222;
+    background: $backgroundSite;
 
     &__container {
         padding-top: 23px;
@@ -557,7 +556,7 @@ a {
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        color: #FBFBFB;
+        color: $colorFooterBernd;
     }
 
     &__social-list {
@@ -571,15 +570,15 @@ a {
         justify-content: center;
         width: 32px;
         height: 32px;
-        color: #000;
-        background-color: #fff;
+        color: $colorSocial;
+        background-color: $backgroundSocial;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     &__social-link:hover {
-        color: #fff;
-        background-color: #f16d7f;
+        color: $colorSocialModified;
+        background-color: $backgroundSocialModified;
     }
 }
 

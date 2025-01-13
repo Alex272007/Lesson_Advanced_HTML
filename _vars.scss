@@ -1,77 +1,50 @@
 $widthSite: 1140px;
-$backBody:#FFFFFF;
-$widthImage: 100%;
+$backgrSite:#FFFFFF;
+$colorContent: #222222;
+$backgroundSite:#222222;
 
 // стили для шапки
-$backHeader:#222222;
 $colorHeader: #E8E8E8;
-
-$paddingNavigat: 18px 32px;
 $gapNavigatLeft: 41px;
 $gapNavigatRight: 33px;
-
-$widthBasket: 19px;
-$heightBasket: 19px;
-$colorBasket: #F16D7F;
-$bordRadBasket: 25px 25px 25px 25px;
-$topBasket: -8px;
-$rightBasket: -10px;
+$colorfooltext: #F16D7F;
 
 // стили для баннера
-$marginBanner: 65px;
 $backgroundBanner: #F1E4E6;
-$widthBanner: 100%;
-$widthImgBanner: 50%;
 
-$paddingContBanner: 64px;
-$colorContBanner: #222222;
-
-$fwidthTitleBanner: 900px;
-$fsizeTitleBanner: 48px;
-$lheightTitleBanner: 58px;
-
-$fwidthHeadingBanner: 700px;
-$fsizeHeadingBanner: 32px;
-$lheightHeadingBanner: 38px;
-$colortextInfoBanner: #F16D7F;
-$paddingInfoBanner: 19px;
 
 // стили для меню
-$paddingMenuActiv: 32px;
-$paddingLeftMenuActiv: 33px;
-$topMenuActiv: 74px;
-$rightMenuActiv: 0;
-$backgMenuActiv: #FFFFFF;
 $boxMenuActiv: 6px 4px 35px rgba(0, 0, 0, 0.21);
 $gapMenuActiv: 20px;
-
-$mbMenuHead: 24px;
-$fwidthMenuHead: 700px;
-$fsizeMenuHead: 14px;
-$lheightMenuHead: 17px;
 $colorMenuHead: #000000;
-
-$fwidthMenuText: 400px;
-$fsizeMenuText: 14px;
-$lheightMenuText: 17px;
-$colorMenuText:#F16D7F;
-$mbMenuText: 12px;
-
-$paddingMenuList: 20px;
-$gapMenuList: 11px;
-$fwidthMenuList: 400px;
-$fsizeMenuList: 14px;
-$lheightMenuList: 17px;
 $colorMenuList:#6F6E6E;
 
-$colortextBanner: #F16D7F;
-
 // стили для категории
-$mbCategory: 96px;
 $gapCategory: 30px;
+$backgrCategory: rgba(33, 22, 22, 0.7);
+$colorText: #FFFFFF;
 
+// стили для продукта
+$colorProductWeek: #9F9F9F;
+$gapProduct: 30px;
+$backgroundCard: #F8F8F8;
+$colorContentName: #000000;
+$colorContentDescript: #5D5D5D;
+$borderBtm: 1px solid #FF6A6A;
+$colorBtmBot: #F26376;
+$colorModified: #FFFFFF;
 
-////
+// стили для информация
+$backgroundInform: #222224;
+$colorInform: #FBFBFB;
 
-$colortextCatatlog:#F16D7F;
-$colorfeatured: #222222;
+// стили для подписка
+$colorSubscript: #222224;
+$backgroundText: #E1E1E1;
+
+// стили для подвала
+$colorFooterBernd: #FBFBFB;
+$colorSocial: #000;
+$backgroundSocial: #fff;
+$colorSocialModified: #fff;
+$backgroundSocialModified: #f16d7f;
