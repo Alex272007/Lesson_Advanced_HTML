@@ -1,4 +1,5 @@
 @import 'vars';
+@import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 * {
@@ -38,16 +39,12 @@ a {
     padding: 18px 32px;
 
     &__left {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        @include centerFlexend();
         gap: $gapNavigatLeft;
     }
 
     &__right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerflex();
         gap: $gapNavigatRight;
     }
 
@@ -75,10 +72,7 @@ a {
     &__basket::after {
         content: url(./img/5.webp);
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include centerColumn();
         width: 19px;
         height: 19px;
         background-color: $colorfooltext;
@@ -120,7 +114,7 @@ a {
     }
 
     &__info {
-        border-left: 12px solid $colorfooltext;
+        border-left: 19px solid $colorfooltext;
         padding-left: 19px;
     }
 }
@@ -187,10 +181,7 @@ a {
 
     &__catalogs {
         flex: 1 1 calc(33.333% - 20px);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include centerColumn();
         min-height: 260px;
         background-position: center;
         background-repeat: no-repeat;
@@ -218,18 +209,14 @@ a {
     &__catalog-darkening {
         background: $backgrCategory;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerflex();
     }
 
     &__catalog__darkening-4 {
         background: $backgrCategory;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centerflex();
     }
 
     &__catalog-text {
@@ -293,9 +280,7 @@ a {
             background: rgba(58, 56, 56, 0.86);
             opacity: 0;
             transition: opacity 0.3s ease;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include centerflex();
 
             &::after {
                 content: "";
@@ -305,9 +290,7 @@ a {
             }
 
             & button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include centerflex();
                 gap: 4px;
             }
         }
@@ -391,10 +374,7 @@ a {
     background-size: cover;
 
     &__detailed {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @include columntext();
         color: $colorInform;
 
         &-icon {
@@ -478,10 +458,7 @@ a {
 .subscribe {
     min-width: 557px;
     height: 142px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @include columntext();
     gap: 32px;
 
     &__sb-text {
@@ -565,9 +542,7 @@ a {
     }
 
     &__social-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centerflex();
         width: 32px;
         height: 32px;
         color: $colorSocial;
