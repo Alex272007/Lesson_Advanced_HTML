@@ -534,6 +534,11 @@ a {
   cursor: pointer;
 }
 
+.subscribe__btn-btn:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
+
 .footer {
   max-width: 1600px;
   max-height: 79px;
