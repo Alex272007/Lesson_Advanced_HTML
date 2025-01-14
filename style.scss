@@ -10,7 +10,7 @@
 
 body {
     scroll-behavior: smooth;
-    background: $backgrSite;
+    background: $backTotal;
     font-family: "Lato", sans-serif;
 }
 
@@ -40,12 +40,12 @@ a {
 
     &__left {
         @include centerFlexend();
-        gap: $gapNavigatLeft;
+        gap: $gapNavLeft;
     }
 
     &__right {
         @include centerflex();
-        gap: $gapNavigatRight;
+        gap: $gapNavRight;
     }
 
     &__left button,
@@ -86,7 +86,7 @@ a {
     margin-bottom: 65px;
     display: flex;
     align-items: center;
-    background: $backgroundBanner;
+    background: $backBanner;
     width: 100%;
 
     &__img {
@@ -129,7 +129,7 @@ a {
     position: absolute;
     top: 74px;
     right: 0;
-    background: $backgrSite;
+    background: $backTotal;
     box-shadow: $boxMenuActiv;
 
     &__all {
@@ -519,7 +519,7 @@ a {
     max-width: 1600px;
     max-height: 79px;
     margin: 0 auto;
-    background: $backgroundSite;
+    background: $backTotal;
 
     &__container {
         padding-top: 23px;
@@ -546,14 +546,14 @@ a {
         width: 32px;
         height: 32px;
         color: $colorSocial;
-        background-color: $backgroundSocial;
+        background-color: $backSocial;
         background-repeat: no-repeat;
         background-position: center;
     }
 
     &__social-link:hover {
         color: $colorSocialModified;
-        background-color: $backgroundSocialModified;
+        background-color: $backSocialModified;
     }
 }
 
