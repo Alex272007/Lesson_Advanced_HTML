@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  outline: none;
 }
 
 body {
@@ -537,6 +538,7 @@ a {
 .subscribe__btn-btn:hover {
   background-color: #FFFFFF;
   color: #F16D7F;
+  border: #F16D7F;
 }
 
 .footer {
