@@ -491,6 +491,13 @@ a {
             opacity: 0.67;
             border-radius: 25px 0 0 25px;
         }
+        
+        &-inp {
+            width: 160px;
+            height: 30px;
+            border: none;
+            background: $backgroundTex;
+        }
 
         &-btn {
             padding: 17px 20px 15px;
@@ -505,18 +512,16 @@ a {
             border-radius: 0 25px 25px 0;
             cursor: pointer;
         }
-
-        &-inp {
-            width: 160px;
-            height: 30px;
-            border: none;
-            background: $backgroundTex;
+         
+        &-btn:hover{
+            background-color: $colorModified;
+            color: $colorfooltext;
         }
     }
 }
 
 .footer {
-    max-width: 1600px;
+    width: 1600px;
     max-height: 79px;
     margin: 0 auto;
     background: $backTotal;
