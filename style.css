@@ -513,6 +513,13 @@ a {
   border-radius: 25px 0 0 25px;
 }
 
+.subscribe__btn-inp {
+  width: 160px;
+  height: 30px;
+  border: none;
+  background: #E1E1E1;
+}
+
 .subscribe__btn-btn {
   padding: 17px 20px 15px;
   font-weight: 400;
@@ -527,12 +534,7 @@ a {
   cursor: pointer;
 }
 
-.subscribe__btn-inp {
-  width: 160px;
-  height: 30px;
-  border: none;
-  background: #E1E1E1;
-}
+
 
 .footer {
   max-width: 1600px;
