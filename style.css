@@ -538,7 +538,7 @@ a {
 .subscribe__btn-btn:hover {
   background-color: #FFFFFF;
   color: #F16D7F;
-  border: #F16D7F;
+  border: 1px solid #F16D7F;
 }
 
 .footer {
