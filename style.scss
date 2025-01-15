@@ -517,7 +517,7 @@ a {
     &-btn:hover {
       background-color: $colorModified;
       color: $colorfooltext;
-      border: 1px solid $colorfooltext;
+      border: 1px solid #000//;
     }
   }
 }
