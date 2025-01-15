@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -37,38 +36,31 @@ a {
   justify-content: space-between;
   padding: 18px 32px;
 }
-
 .navigation__left {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   gap: 41px;
 }
-
 .navigation__right {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 33px;
 }
-
 .navigation__left button, .navigation__right button {
   background: none;
   border: none;
 }
-
 .navigation__search, .navigation__choice, .navigation__profile, .navigation__basket {
   cursor: pointer;
 }
-
 .navigation__choice {
   position: relative;
 }
-
 .navigation__basket {
   position: relative;
 }
-
 .navigation__basket::after {
   content: url(./img/5.webp);
   position: absolute;
@@ -91,33 +83,27 @@ a {
   background: #F1E4E6;
   width: 100%;
 }
-
 .banner__img {
   width: 50%;
 }
-
 .banner__content {
   padding-left: 64px;
 }
-
 .banner__content h1 h2 {
   color: #222222;
 }
-
 .banner__content-title {
   font-weight: 900px;
   font-size: 48px;
   line-height: 58px;
 }
-
 .banner__content-heading {
   font-weight: 700px;
   font-size: 32px;
   line-height: 38px;
 }
-
 .banner__info {
-  border-left: 12px solid #F16D7F;
+  border-left: 19px solid #F16D7F;
   padding-left: 19px;
 }
 
@@ -133,8 +119,8 @@ a {
   right: 0;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  margin-bottom: 24px;
 }
-
 .menu-active__all {
   display: flex;
   flex-direction: column;
@@ -142,15 +128,14 @@ a {
 }
 
 .menu-heading {
-  margin-bottom: 24px;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 14px;
   line-height: 17px;
   color: #000000;
 }
 
 .menu-text {
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 17px;
   color: #F16D7F;
@@ -162,11 +147,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 11px;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 14px;
   line-height: 17px;
 }
-
 .menu-list a {
   color: #6F6E6E;
 }
@@ -181,7 +165,6 @@ a {
   flex-wrap: wrap;
   gap: 30px;
 }
-
 .category__catalogs {
   flex: 1 1 calc(33.333% - 20px);
   display: flex;
@@ -194,24 +177,19 @@ a {
   background-size: cover;
   cursor: pointer;
 }
-
 .category__catalog-1 {
   background-image: url(./img/middleBlock1.webp);
 }
-
 .category__catalog-2 {
   background-image: url(./img/middleBlock2.webp);
 }
-
 .category__catalog-3 {
   background-image: url(./img/middleBlock3.webp);
 }
-
 .category__catalog-4 {
   min-height: 180px;
   background-image: url(./img/middleBlock4.webp);
 }
-
 .category__catalog-darkening {
   background: rgba(33, 22, 22, 0.7);
   width: 100%;
@@ -220,7 +198,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .category__catalog__darkening-4 {
   background: rgba(33, 22, 22, 0.7);
   width: 100%;
@@ -229,7 +206,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .category__catalog-text {
   font-weight: 400;
   font-size: 16px;
@@ -237,7 +213,6 @@ a {
   text-align: center;
   color: #FFFFFF;
 }
-
 .category__catalog-colortext {
   color: #F16D7F;
   font-size: 24px;
@@ -246,19 +221,16 @@ a {
 .products {
   margin-bottom: 60px;
 }
-
 .products__launch {
   text-align: center;
   font-weight: 400;
 }
-
 .products__launch-featured {
   margin-bottom: 6px;
   font-size: 30px;
   line-height: 36px;
   color: #222222;
 }
-
 .products__launch-week {
   font-size: 14px;
   line-height: 17px;
@@ -273,15 +245,12 @@ a {
   gap: 30px;
   margin-bottom: 48px;
 }
-
 .product__card {
   background: #F8F8F8;
 }
-
 .product__card-image {
   position: relative;
 }
-
 .product__card-bg {
   content: "";
   position: absolute;
@@ -296,42 +265,36 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .product__card-bg::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
 }
-
 .product__card-bg button {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 4px;
 }
-
 .product__card-image:hover .product__card-bg {
   opacity: 1;
 }
-
 .product__add {
   width: 139px;
   height: 44px;
   background: none;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
   font-weight: 400;
   font-size: 14px;
   cursor: pointer;
   transition: transform 0.3s ease;
   text-align: center;
 }
-
 .product__content {
   padding: 24px 29px 24px 16px;
 }
-
 .product__content-name {
   margin-bottom: 13px;
   font-weight: 400;
@@ -339,7 +302,6 @@ a {
   line-height: 16px;
   color: #000000;
 }
-
 .product__content-description {
   margin-bottom: 16px;
   font-weight: 300;
@@ -347,20 +309,17 @@ a {
   line-height: 17px;
   color: #5D5D5D;
 }
-
 .product__content-price {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #F16D7F;
 }
-
 .product__btm {
   display: flex;
   justify-content: center;
   margin-bottom: 95px;
 }
-
 .product__btm-bot {
   padding: 15px 39px 14px 39px;
   border: 1px solid #FF6A6A;
@@ -373,21 +332,21 @@ a {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .product__btm-bot:hover {
   background-color: #F26376;
   color: #FFFFFF;
 }
 
+.info {
+  background: #222224;
+}
+
 .information {
   padding: 104px 230px;
-  background: #222224;
   display: flex;
   justify-content: center;
   gap: 30px;
-  background-size: cover;
 }
-
 .information__detailed {
   display: flex;
   flex-direction: column;
@@ -395,22 +354,18 @@ a {
   text-align: center;
   color: #FBFBFB;
 }
-
 .information__detailed-icon {
   margin-bottom: 26px;
 }
-
 .information__detailed-middle {
   margin-bottom: 19px;
 }
-
 .information__detailed h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 16px;
 }
-
 .information__detailed p {
   font-weight: 300;
   font-size: 14px;
@@ -419,7 +374,6 @@ a {
 }
 
 .subscription {
-  max-width: 1600px;
   max-height: 448px;
   margin: 0 auto;
   align-items: center;
@@ -429,13 +383,11 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .subscription__img {
   background: rgba(244, 244, 244, 0.7);
   width: 100%;
   height: 100%;
 }
-
 .subscription__bg {
   padding-top: 97px;
   padding-bottom: 156px;
@@ -443,7 +395,6 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .subscription__content {
   width: 359px;
   height: 225px;
@@ -451,11 +402,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
-
 .subscription__foto {
   margin-bottom: 30px;
 }
-
 .subscription__text {
   width: 359px;
   font-weight: 400;
@@ -464,7 +413,6 @@ a {
   align-items: center;
   text-align: center;
 }
-
 .subscription__text-different {
   font-style: italic;
   font-weight: 400;
@@ -473,7 +421,7 @@ a {
 }
 
 .subscribe {
-  min-width: 557px;
+  min-width: 534px;
   height: 142px;
   display: flex;
   flex-direction: column;
@@ -481,24 +429,20 @@ a {
   text-align: center;
   gap: 32px;
 }
-
 .subscribe__sb-text {
   font-weight: 700;
   font-size: 24px;
 }
-
 .subscribe__sb-text-content {
   font-weight: 400;
   font-size: 18px;
   line-height: 167.2%;
 }
-
 .subscribe__btn {
   min-width: 256px;
   height: 49px;
   display: flex;
 }
-
 .subscribe__btn-text {
   min-width: 256px;
   padding: 7px 64px 6px 22px;
@@ -513,14 +457,12 @@ a {
   opacity: 0.67;
   border-radius: 25px 0 0 25px;
 }
-
 .subscribe__btn-inp {
   width: 160px;
   height: 30px;
   border: none;
   background: #E1E1E1;
 }
-
 .subscribe__btn-btn {
   padding: 17px 20px 15px;
   font-weight: 400;
@@ -534,7 +476,6 @@ a {
   border-radius: 0 25px 25px 0;
   cursor: pointer;
 }
-
 .subscribe__btn-btn:hover {
   background-color: #FFFFFF;
   color: #F16D7F;
@@ -542,12 +483,10 @@ a {
 }
 
 .footer {
-  max-width: 1600px;
   max-height: 79px;
   margin: 0 auto;
   background: #222222;
 }
-
 .footer__container {
   padding-top: 23px;
   padding-bottom: 24px;
@@ -555,19 +494,16 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-
 .footer__brend {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #FBFBFB;
 }
-
 .footer__social-list {
   display: flex;
   gap: 8px;
 }
-
 .footer__social-link {
   display: flex;
   justify-content: center;
@@ -579,7 +515,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 .footer__social-link:hover {
   color: #fff;
   background-color: #f16d7f;
@@ -589,37 +524,29 @@ a {
   .container {
     max-width: 736px;
   }
-
   .navigation {
     padding: 18px 32px;
   }
-
   .banner__content {
     padding-left: 39px;
   }
-
   .banner__content-title {
     font-size: 44px;
     line-height: 53px;
   }
-
   .banner__content-heading {
     font-size: 24px;
     line-height: 29px;
   }
-
   .category {
     gap: 19px;
   }
-
   .category__catalogs {
     min-height: 167px;
   }
-
   .category__catalog-4 {
     min-height: 116px;
   }
-
   .product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -627,25 +554,20 @@ a {
     gap: 16px;
     margin-bottom: 33px;
   }
-
   .information {
     flex-direction: column;
     align-items: center;
     gap: 48px;
   }
-
   .information__detailed-icon {
     margin-bottom: 28px;
   }
-
   .information__detailed-middle {
     margin-bottom: 19px;
   }
-
   .subscription {
     max-height: 612px;
   }
-
   .subscription__bg {
     padding-top: 64px;
     padding-bottom: 140px;
@@ -654,122 +576,107 @@ a {
     gap: 48px;
   }
 }
-
 @media (min-width: 320px) and (max-width: 768px) {
   .container {
     max-width: 344px;
   }
-
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .hide {
     display: none;
   }
-
   .navigation {
     padding: 18px 16px;
   }
-
   .banner {
     justify-content: center;
     align-items: center;
     min-width: 320px;
     min-height: 363px;
   }
-
   .banner .banner__info {
     white-space: nowrap;
   }
-
   .banner__content {
     padding-left: 0;
     max-width: 263px;
   }
-
   .banner__content-title {
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
   }
-
   .banner__content-heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
   }
-
   .category {
     flex-direction: column;
     gap: 32px;
     margin-bottom: 64px;
   }
-
   .category__catalogs {
     min-width: 320px;
     min-height: 247px;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   .category__catalog-4 {
     background-position: center;
     background-size: cover;
   }
-
   .category__catalog-darkening {
     min-height: 247px;
   }
-
   .category__catalog-4 {
     min-height: 111px;
   }
-
   .category__catalog__darkening-4 {
     min-height: 111px;
   }
-
   .product {
     display: flex;
     flex-direction: column;
     gap: 16px;
     margin-bottom: 41px;
   }
-
   .product__card {
     min-width: 320px;
     height: 560px;
   }
-
+  .info {
+    max-width: 375px;
+  }
   .information {
     padding: 48px 13px 81px;
     flex-direction: column;
     align-items: center;
     gap: 46px;
   }
-
   .information__detailed {
     min-width: 320px;
     margin-bottom: 27px;
   }
-
   .information__detailed-middle p {
     min-width: 320px;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
   }
-
   .information__detailed-icon {
     margin-bottom: 28px;
   }
-
   .information__detailed-middle {
     margin-bottom: 19px;
   }
-
   .subscription {
     max-width: 610px;
     max-height: 550px;
   }
-
   .subscription__bg {
     padding-top: 50px;
     padding-bottom: 110px;
@@ -777,66 +684,52 @@ a {
     align-items: center;
     gap: 73px;
   }
-
   .subscription__content {
     min-width: 320px;
     height: 194px;
   }
-
   .subscription__text {
     min-width: 320px;
     font-size: 18px;
     line-height: 22px;
   }
-
   .crop {
     width: 375px;
     height: auto;
     overflow: hidden;
   }
-
   .subscribe {
     min-width: 320px;
     height: 123px;
     gap: 22px;
   }
-
   .subscribe_sb {
     width: 271px;
   }
-
   .subscribe_sb-text {
     font-size: 24px;
     line-height: 153%;
   }
-
   .subscribe_sb-content {
     font-size: 14px;
     line-height: 153%;
   }
-
   .subscribe__btn {
     min-width: 310px;
     height: 47px;
   }
-
   .subscribe__btn-text {
     min-width: 233px;
   }
-
   .subscribe__btn-btn {
     min-width: 96px;
   }
-
   .footer {
     max-width: 375px;
     max-height: 143px;
   }
-
   .footer__container {
     flex-direction: column-reverse;
     gap: 40px;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

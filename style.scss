@@ -126,12 +126,13 @@ a {
 
 .menu-active {
   padding: 32px;
-  padding-left: 33pxv;
+  padding-left: 33px;
   position: absolute;
   top: 74px;
   right: 0;
   background: $backTotal;
   box-shadow: $boxMenuActiv;
+  margin-bottom: 24px;
 
   &__all {
     display: flex;
@@ -141,7 +142,6 @@ a {
 }
 
 .menu-heading {
-  margin-bottom: 24px;
   font-weight: 700px;
   font-size: 14px;
   line-height: 17px;
@@ -209,6 +209,7 @@ a {
 
   &__catalog-darkening {
     background: $backgrCategory;
+    width: 100%;
     height: 100%;
     @include centerflex();
   }
@@ -366,13 +367,16 @@ a {
   }
 }
 
-.information {
-  padding: 104px 230px;
+.info{
   background: $backgroundInform;
+}
+
+.information { 
+  padding: 104px 230px;
   display: flex;
   justify-content: center;
-  gap: 30px;
-  background-size: cover;
+  gap: $gapIform;
+  
 
   &__detailed {
     @include columntext();
@@ -403,7 +407,6 @@ a {
 }
 
 .subscription {
-  max-width: 1600px;
   max-height: 448px;
   margin: 0 auto;
   align-items: center;
@@ -497,7 +500,7 @@ a {
       width: 160px;
       height: 30px;
       border: none;
-      background: $backgroundTex;
+      background: $backgroundText;
     }
 
     &-btn {
@@ -517,16 +520,15 @@ a {
     &-btn:hover {
       background-color: $colorModified;
       color: $colorfooltext;
-      border: 1px solid #000//;
+      border: 1px solid $colorfooltext;
     }
   }
 }
 
 .footer {
-  width: 1600px;
   max-height: 79px;
   margin: 0 auto;
-  background: $backTotal;
+  background: $backgroundSite;
 
   &__container {
     padding-top: 23px;
@@ -637,7 +639,9 @@ a {
   .container {
     max-width: 344px;
   }
-
+body{
+  @include centerflex;
+}
   .hide {
     display: none;
   }
@@ -715,7 +719,9 @@ a {
       height: 560px;
     }
   }
-
+.info{
+  max-width: 375px;
+}
   .information {
     padding: 48px 13px 81px;
     flex-direction: column;
