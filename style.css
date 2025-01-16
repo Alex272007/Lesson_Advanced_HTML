@@ -580,11 +580,7 @@ a {
   .container {
     max-width: 344px;
   }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .hide {
     display: none;
   }
