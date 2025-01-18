@@ -174,7 +174,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: $gapMenuList;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
 
@@ -411,6 +411,8 @@ a {
     }
 
     & p {
+      width: 360px;
+      height: 34px;
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
