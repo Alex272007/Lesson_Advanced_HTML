@@ -9,6 +9,15 @@
   outline: none;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   scroll-behavior: smooth;
   background: $backTotal;
@@ -464,7 +473,7 @@ a {
 }
 
 .subscribe {
-  min-width: 534px;
+  min-width: 557px;
   height: 142px;
   @include columntext();
   gap: 32px;
@@ -477,11 +486,12 @@ a {
       font-weight: 400;
       font-size: 18px;
       line-height: 167.2%;
+      text-align: center;
     }
   }
 
   &__btn {
-    min-width: 256px;
+    min-width: 356px;
     height: 49px;
     display: flex;
 
@@ -501,13 +511,13 @@ a {
     }
 
     &-inp {
-      width: 160px;
-      height: 30px;
+      width: 170px;
+      height: 36px;
       border: none;
       background: $backgroundText;
     }
 
-    &-btn {
+    &-btn { 
       padding: 17px 20px 15px;
       font-weight: 400;
       font-size: 14px;
@@ -637,15 +647,23 @@ a {
       gap: 48px;
     }
   }
+  
+  .subscribe {
+    gap: 27px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+
   .container {
     max-width: 344px;
   }
-body{
-  @include centerflex;
-}
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
   .hide {
     display: none;
   }
@@ -723,9 +741,10 @@ body{
       height: 560px;
     }
   }
-.info{
-  max-width: 375px;
-}
+  .info{
+    max-width: 375px;
+  }
+
   .information {
     padding: 48px 13px 81px;
     flex-direction: column;
