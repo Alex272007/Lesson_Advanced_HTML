@@ -1,7 +1,7 @@
 $widthSite: 1140px;
 $backTotal:#FFFFFF;
 $colorContent: #222222;
-$backgroundSite:#222222;
+$bgSite:#222222;
 
 // стили для шапки
 $colorHeader: #E8E8E8;
@@ -11,6 +11,7 @@ $colorfooltext: #F16D7F;
 
 // стили для баннера
 $backBanner: #F1E4E6;
+$borderInfo: 19px;
 
 
 // стили для меню
@@ -26,27 +27,26 @@ $backgrCategory: rgba(33, 22, 22, 0.7);
 $colorText: #FFFFFF;
 
 // стили для продукта
-$colorProductWeek: #9F9F9F;
+$colorProdWeek: #9F9F9F;
 $gapProduct: 30px;
-$backgroundCard: #F8F8F8;
-$colorContentName: #000000;
-$colorContentDescript: #5D5D5D;
+$backCard: #F8F8F8;
+$colorContName: #000000;
+$colorContDesc: #5D5D5D;
 $borderBtm: 1px solid #FF6A6A;
 $colorBtmBot: #F26376;
 $colorModified: #FFFFFF;
 
 // стили для информация
-$backgroundInform: #222224;
+$bgInform: #222224;
 $colorInform: #FBFBFB;
 $gapIform: 30px;
 
 // стили для подписка
-$colorSubscript: #222224;
-$backgroundText: #E1E1E1;
+$colSubscript: #222224;
+$bgText: #E1E1E1;
 
 // стили для подвала
-$colorFooterBernd: #FBFBFB;
-$colorSocial: #000;
+$colFootBernd: #FBFBFB;
+$colSocial: #000;
 $backSocial: #fff;
-$colorSocialModified: #fff;
-$backSocialModified: #f16d7f;
+$colSocModif: #fff;

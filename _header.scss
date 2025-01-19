@@ -1,0 +1,54 @@
+
+.header {
+    background: $bgSite;
+    color: $colorHeader;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 32px;
+  
+    &__left {
+      @include centerFlexend();
+      gap: $gapNavLeft;
+    }
+  
+    &__right {
+      @include centerflex();
+      gap: $gapNavRight;
+    }
+  
+    &__left button,
+    &__right button {
+      background: none;
+      border: none;
+    }
+  
+    &__search,
+    &__choice,
+    &__profile,
+    &__basket {
+      cursor: pointer;
+    }
+  
+    &__choice {
+      position: relative;
+    }
+  
+    &__basket {
+      position: relative;
+    }
+  
+    &__basket::after {
+      content: url(./img/5.webp);
+      position: absolute;
+      @include centerColumn();
+      width: 19px;
+      height: 19px;
+      background-color: $colorfooltext;
+      border-radius: 25px 25px 25px 25px;
+      top: -8px;
+      right: -10px;
+    }
+  }

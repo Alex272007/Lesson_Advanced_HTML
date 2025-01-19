@@ -2,6 +2,7 @@
 @import "mixins";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -38,59 +39,7 @@ a {
   margin: 0 auto;
 }
 
-.header {
-  background: $backgroundSite;
-  color: $colorHeader;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  padding: 18px 32px;
-
-  &__left {
-    @include centerFlexend();
-    gap: $gapNavLeft;
-  }
-
-  &__right {
-    @include centerflex();
-    gap: $gapNavRight;
-  }
-
-  &__left button,
-  &__right button {
-    background: none;
-    border: none;
-  }
-
-  &__search,
-  &__choice,
-  &__profile,
-  &__basket {
-    cursor: pointer;
-  }
-
-  &__choice {
-    position: relative;
-  }
-
-  &__basket {
-    position: relative;
-  }
-
-  &__basket::after {
-    content: url(./img/5.webp);
-    position: absolute;
-    @include centerColumn();
-    width: 19px;
-    height: 19px;
-    background-color: $colorfooltext;
-    border-radius: 25px 25px 25px 25px;
-    top: -8px;
-    right: -10px;
-  }
-}
+@import "header";
 
 .banner {
   margin-bottom: 65px;
@@ -124,7 +73,7 @@ a {
   }
 
   &__info {
-    border-left: 19px solid $colorfooltext;
+    border-left: $borderInfo solid $colorfooltext;
     padding-left: 19px;
   }
 }
@@ -265,7 +214,7 @@ a {
     &-week {
       font-size: 14px;
       line-height: 17px;
-      color: $colorProductWeek;
+      color: $colorProdWeek;
       margin-bottom: 48px;
     }
   }
@@ -279,7 +228,7 @@ a {
   margin-bottom: 48px;
 
   &__card {
-    background: $backgroundCard;
+    background: $backCard;
 
     &-image {
       position: relative;
@@ -329,22 +278,24 @@ a {
   }
 
   &__content {
-    padding: 24px 29px 24px 16px;
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     &-name {
       margin-bottom: 13px;
       font-weight: 400;
       font-size: 13px;
       line-height: 16px;
-      color: $colorContentName;
+      color: $colorContName;
     }
 
     &-description {
       margin-bottom: 16px;
-      font-weight: 300;
+      font-weight: 400;
       font-size: 14px;
       line-height: 17px;
-      color: $colorContentDescript;
+      color: $colorContDesc;
     }
 
     &-price {
@@ -381,7 +332,7 @@ a {
 }
 
 .info{
-  background: $backgroundInform;
+  background: $bgInform;
 }
 
 .information { 
@@ -421,166 +372,7 @@ a {
   }
 }
 
-.subscription {
-  max-height: 448px;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  color: $colorSubscript;
-  background-image: url(./img/subscribe_image.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  &__img {
-    background: rgba(244, 244, 244, 0.7);
-    width: 100%;
-    height: 100%;
-  }
-
-  &__bg {
-    padding-top: 97px;
-    padding-bottom: 156px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__content {
-    width: 359px;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__foto {
-    margin-bottom: 30px;
-  }
-
-  &__text {
-    width: 359px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    align-items: center;
-    text-align: center;
-
-    &-different {
-      font-style: italic;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-}
-
-.subscribe {
-  min-width: 557px;
-  height: 142px;
-  @include columntext();
-  gap: 32px;
-
-  &__sb-text {
-    font-weight: 700;
-    font-size: 24px;
-
-    &-content {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 167.2%;
-      text-align: center;
-    }
-  }
-
-  &__btn {
-    min-width: 356px;
-    height: 49px;
-    display: flex;
-
-    &-text {
-      min-width: 256px;
-      padding: 7px 64px 6px 22px;
-      border: none;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      display: flex;
-      align-items: center;
-      background: $backgroundText;
-      color: $colorSubscript;
-      opacity: 0.67;
-      border-radius: 25px 0 0 25px;
-    }
-
-    &-inp {
-      width: 170px;
-      height: 36px;
-      border: none;
-      background: $backgroundText;
-    }
-
-    &-btn { 
-      padding: 17px 20px 15px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
-      border: none;
-      display: flex;
-      align-items: center;
-      background: $colorfooltext;
-      color: $colorText;
-      border-radius: 0 25px 25px 0;
-      cursor: pointer;
-    }
-
-    &-btn:hover {
-      background-color: $colorModified;
-      color: $colorfooltext;
-      border: 1px solid $colorfooltext;
-    }
-  }
-}
-
-.footer {
-  max-height: 79px;
-  margin: 0 auto;
-  background: $backgroundSite;
-
-  &__container {
-    padding-top: 23px;
-    padding-bottom: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__brend {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: $colorFooterBernd;
-  }
-
-  &__social-list {
-    display: flex;
-    gap: 8px;
-  }
-
-  &__social-link {
-    @include centerflex();
-    width: 32px;
-    height: 32px;
-    color: $colorSocial;
-    background-color: $backSocial;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__social-link:hover {
-    color: $colorSocialModified;
-    background-color: $backSocialModified;
-  }
-}
+@import "footer";
 
 @media (min-width: 767px) and (max-width: 1025px) {
   .container {

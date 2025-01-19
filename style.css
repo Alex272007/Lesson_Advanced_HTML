@@ -306,7 +306,9 @@ a {
   text-align: center;
 }
 .product__content {
-  padding: 24px 29px 24px 16px;
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .product__content-name {
   margin-bottom: 13px;
@@ -317,7 +319,7 @@ a {
 }
 .product__content-description {
   margin-bottom: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #5D5D5D;
@@ -533,7 +535,7 @@ a {
 }
 .footer__social-link:hover {
   color: #fff;
-  background-color: #f16d7f;
+  background-color: #F16D7F;
 }
 
 @media (min-width: 767px) and (max-width: 1025px) {
