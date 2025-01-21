@@ -1,5 +1,3 @@
-@import "vars";
-@import "mixins";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 
 
@@ -153,20 +151,20 @@ a {
   }
 
   &__catalog-1 {
-    background-image: url(./img/middleBlock1.webp);
+    background-image: url(../img/middleBlock1.webp);
   }
 
   &__catalog-2 {
-    background-image: url(./img/middleBlock2.webp);
+    background-image: url(../img/middleBlock2.webp);
   }
 
   &__catalog-3 {
-    background-image: url(./img/middleBlock3.webp);
+    background-image: url(../img/middleBlock3.webp);
   }
 
   &__catalog-4 {
     min-height: 180px;
-    background-image: url(./img/middleBlock4.webp);
+    background-image: url(../img/middleBlock4.webp);
   }
 
   &__catalog-darkening {
