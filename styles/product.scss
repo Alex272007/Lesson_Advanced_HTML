@@ -2,41 +2,83 @@
 @import "common";
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    outline: none;
-  }
-  
-  html {
-    box-sizing: border-box;
-  }
-  
-  *::after,
-  *::before {
-    box-sizing: inherit;
-  }
-  
-  body {
-    scroll-behavior: smooth;
-    background: $backTotal;
-    font-family: "Lato", sans-serif;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .container {
-    max-width: $widthSite;
-    margin: 0 auto;
-  }
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: $backTotal;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: $widthSite;
+  margin: 0 auto;
+}
 
 @import "header";
+
+@import "menu";
+
+.arrivas {
+  @include spacebeet();
+  width: 1600px;
+  height: 148px;
+  &__new {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorful;
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+
+    &-link {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+    }
+
+    &-colorful{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: $colorful;
+    }
+
+    & li:not(:last-child)::after {
+      content: "/";
+      margin: 0 10px;
+      color: #636363;
+    }
+  }
+}
+
 
 @import "footer";

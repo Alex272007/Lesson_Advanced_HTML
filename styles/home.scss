@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -71,12 +70,12 @@ a {
   }
 
   &__info {
-    border-left: $borderInfo solid $colorfooltext;
+    border-left: $borderInfo solid $colorful;
     padding-left: 19px;
   }
 }
 
-.content{
+.content {
   flex: 1;
 }
 
@@ -112,7 +111,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: $colorfooltext;
+  color: $colorful;
   margin-bottom: 12px;
 }
 
@@ -131,7 +130,7 @@ a {
 }
 
 .colortext {
-  color: $colorfooltext;
+  color: $colorful;
 }
 
 .category {
@@ -300,7 +299,7 @@ a {
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
-      color: $colorfooltext;
+      color: $colorful;
     }
   }
 
@@ -329,16 +328,15 @@ a {
   }
 }
 
-.info{
+.info {
   background: $bgInform;
 }
 
-.information { 
+.information {
   padding: 104px 230px;
   display: flex;
   justify-content: center;
   gap: $gapIform;
-  
 
   &__detailed {
     @include columntext();
@@ -439,23 +437,22 @@ a {
       gap: 48px;
     }
   }
-  
+
   .subscribe {
     gap: 27px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-
   .container {
     max-width: 344px;
   }
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .hide {
     display: none;
   }
@@ -533,7 +530,7 @@ a {
       height: 560px;
     }
   }
-  .info{
+  .info {
     max-width: 375px;
   }
 

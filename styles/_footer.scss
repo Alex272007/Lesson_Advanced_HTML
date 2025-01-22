@@ -104,7 +104,7 @@
         border: none;
         display: flex;
         align-items: center;
-        background: $colorfooltext;
+        background: $colorful;
         color: $colorText;
         border-radius: 0 25px 25px 0;
         cursor: pointer;
@@ -112,8 +112,8 @@
   
       &-btn:hover {
         background-color: $colorModified;
-        color: $colorfooltext;
-        border: 1px solid $colorfooltext;
+        color: $colorful;
+        border: 1px solid $colorful;
       }
     }
   }
@@ -155,6 +155,6 @@
   
     &__social-link:hover {
       color: $colSocModif;
-      background-color: $colorfooltext;
+      background-color: $colorful;
     }
   }

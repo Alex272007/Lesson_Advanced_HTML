@@ -1,0 +1,49 @@
+.hiden {
+    display: none;
+  }
+  
+  .menu-active {
+    padding: 32px;
+    padding-left: 33px;
+    position: absolute;
+    top: 74px;
+    right: 0;
+    background: $backTotal;
+    box-shadow: $boxMenuActiv;
+    margin-bottom: 24px;
+  
+    &__all {
+      display: flex;
+      flex-direction: column;
+      gap: $gapMenuActiv;
+    }
+  }
+  
+  .menu-heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorMenuHead;
+  }
+  
+  .menu-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorful;
+    margin-bottom: 12px;
+  }
+  
+  .menu-list {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: $gapMenuList;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  
+    & a {
+      color: $colorMenuList;
+    }
+  }

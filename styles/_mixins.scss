@@ -1,25 +1,33 @@
-@mixin centerflex(){
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// миксины для главной
+@mixin centerflex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin centerFlexend(){
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
- 
-@mixin centerColumn(){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@mixin centerFlexend() {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-@mixin columntext(){
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+@mixin centerColumn() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin columntext() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+// миксины для продукта
+@mixin spacebeet() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
