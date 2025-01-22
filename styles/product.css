@@ -133,6 +133,10 @@ a {
   color: #6F6E6E;
 }
 
+.breadclumb {
+  background: #F8F3F4;
+}
+
 .arrivas {
   display: flex;
   justify-content: space-between;
@@ -168,6 +172,11 @@ a {
   content: "/";
   margin: 0 10px;
   color: #636363;
+}
+
+.slideImage {
+  width: 1600px;
+  height: 777px;
 }
 
 .subscription {

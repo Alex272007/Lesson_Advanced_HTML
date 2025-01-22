@@ -41,10 +41,14 @@ a {
 
 @import "menu";
 
+.breadclumb{
+  background: #F8F3F4;
+}
 .arrivas {
   @include spacebeet();
   width: 1600px;
   height: 148px;
+ 
   &__new {
     font-weight: 400;
     font-size: 24px;
@@ -79,6 +83,9 @@ a {
     }
   }
 }
-
+.slideImage{
+  width: 1600px;
+  height: 777px;
+}
 
 @import "footer";
