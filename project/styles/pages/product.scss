@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-@import "common";
 
 * {
   margin: 0;
@@ -37,9 +36,9 @@ a {
   margin: 0 auto;
 }
 
-@import "header";
+@import "../components/header";
 
-@import "menu";
+@import "../components/menu";
 
 .breadclumb{
   background: #F8F3F4;
@@ -88,4 +87,4 @@ a {
   height: 777px;
 }
 
-@import "footer";
+@import "../components/footer";

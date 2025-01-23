@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +37,7 @@ a {
   margin: 0 auto;
 }
 
-@import "header";
+@import "../components/header";
 
 .banner {
   margin-bottom: 65px;
@@ -150,20 +151,20 @@ a {
   }
 
   &__catalog-1 {
-    background-image: url(../img/middleBlock1.webp);
+    background-image: url(/img/middleBlock1.webp);
   }
 
   &__catalog-2 {
-    background-image: url(../img/middleBlock2.webp);
+    background-image: url(/img/middleBlock2.webp);
   }
 
   &__catalog-3 {
-    background-image: url(../img/middleBlock3.webp);
+    background-image: url(/img/middleBlock3.webp);
   }
 
   &__catalog-4 {
     min-height: 180px;
-    background-image: url(../img/middleBlock4.webp);
+    background-image: url(/img/middleBlock4.webp);
   }
 
   &__catalog-darkening {
@@ -189,7 +190,7 @@ a {
   }
 
   &__catalog-colortext {
-    color: $colorfooltext;
+    color: $colorful;
     font-size: 24px;
   }
 }
@@ -336,7 +337,7 @@ a {
   padding: 104px 230px;
   display: flex;
   justify-content: center;
-  gap: $gapIform;
+  gap: $gapInform;
 
   &__detailed {
     @include columntext();
@@ -368,7 +369,7 @@ a {
   }
 }
 
-@import "footer";
+@import "../components/footer";
 
 @media (min-width: 767px) and (max-width: 1025px) {
   .container {

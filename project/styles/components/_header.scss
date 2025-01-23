@@ -41,7 +41,7 @@
     }
   
     &__basket::after {
-      content: url(../img/5.webp);
+      content: url(/img/5.webp);
       position: absolute;
       @include centerColumn();
       width: 19px;

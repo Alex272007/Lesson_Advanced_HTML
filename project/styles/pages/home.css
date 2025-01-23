@@ -71,7 +71,7 @@ a {
   position: relative;
 }
 .navigation__basket::after {
-  content: url(../img/5.webp);
+  content: url(/img/5.webp);
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -191,17 +191,17 @@ a {
   cursor: pointer;
 }
 .category__catalog-1 {
-  background-image: url(../img/middleBlock1.webp);
+  background-image: url(/img/middleBlock1.webp);
 }
 .category__catalog-2 {
-  background-image: url(../img/middleBlock2.webp);
+  background-image: url(/img/middleBlock2.webp);
 }
 .category__catalog-3 {
-  background-image: url(../img/middleBlock3.webp);
+  background-image: url(/img/middleBlock3.webp);
 }
 .category__catalog-4 {
   min-height: 180px;
-  background-image: url(../img/middleBlock4.webp);
+  background-image: url(/img/middleBlock4.webp);
 }
 .category__catalog-darkening {
   background: rgba(33, 22, 22, 0.7);
@@ -396,7 +396,7 @@ a {
   align-items: center;
   text-align: center;
   color: #222224;
-  background-image: url(../img/subscribe_image.webp);
+  background-image: url(/img/subscribe_image.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
