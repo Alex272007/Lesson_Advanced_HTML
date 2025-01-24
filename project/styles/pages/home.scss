@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
-
+@import "common";
 
 * {
   margin: 0;
@@ -310,21 +310,21 @@ a {
     margin-bottom: 95px;
 
     &-bot {
-      padding: 15px 39px 14px 39px;
-      border: $borderBtm;
+      padding: 15px 39px;
+      border: 1px solid $colorful;
       display: block;
       font-weight: 400;
       font-size: 16px;
       line-height: 19px;
       background: none;
-      color: $colorBtmBot;
+      color: $colorful;
       cursor: pointer;
       transition: all 0.3s;
     }
 
     &-bot:hover {
-      background-color: $colorBtmBot;
-      color: $colorModified;
+      background-color: $colorful;
+      color: $backTotal;
     }
   }
 }

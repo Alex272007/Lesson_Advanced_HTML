@@ -134,7 +134,7 @@ a {
 }
 
 .breadclumb {
-  background: #F8F3F4;
+  background: #f8f3f4;
 }
 
 .arrivas {
@@ -174,9 +174,122 @@ a {
   color: #636363;
 }
 
-.slideImage {
+.slides {
+  background: #F7F7F7;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  align-items: center;
+}
+.slides__transition-lf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  cursor: pointer;
+}
+.slides__image {
   width: 1600px;
   height: 777px;
+  background: url(/img/image7.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.slides__transition-rg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  cursor: pointer;
+}
+
+.collect {
+  width: 1140px;
+  height: 600px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 65px;
+  margin-bottom: 63px;
+}
+.collect__gender {
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+.collect__dash {
+  width: 63px;
+  height: 3px;
+  border: 2px solid #F16D7F;
+  background: #F16D7F;
+  margin-bottom: 12px;
+}
+.collect__advert {
+  margin-bottom: 49px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4d4d4d;
+}
+.collect__descript {
+  width: 555px;
+  height: 52px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5e5e5e;
+}
+.collect__price {
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+}
+.collect__line {
+  width: 642px;
+  height: 1px;
+  background: #eaeaea;
+  border: 1px solid #eaeaea;
+  margin-bottom: 64px;
+}
+.collect__choice {
+  display: flex;
+  justify-content: space-around;
+  gap: 23px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-bottom: 49px;
+}
+.collect__add button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+  width: 212px;
+  height: 49px;
+}
+.collect__add button-add {
+  background: none;
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .subscription {
@@ -284,7 +397,7 @@ a {
   cursor: pointer;
 }
 .subscribe__btn-btn:hover {
-  background-color: #FFFFFF;
+  background-color: #F16D7F;
   color: #F16D7F;
   border: 1px solid #F16D7F;
 }

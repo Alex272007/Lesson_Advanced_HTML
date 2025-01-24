@@ -336,19 +336,19 @@ a {
   margin-bottom: 95px;
 }
 .product__btm-bot {
-  padding: 15px 39px 14px 39px;
-  border: 1px solid #FF6A6A;
+  padding: 15px 39px;
+  border: 1px solid #F16D7F;
   display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   background: none;
-  color: #F26376;
+  color: #F16D7F;
   cursor: pointer;
   transition: all 0.3s;
 }
 .product__btm-bot:hover {
-  background-color: #F26376;
+  background-color: #F16D7F;
   color: #FFFFFF;
 }
 
@@ -495,7 +495,7 @@ a {
   cursor: pointer;
 }
 .subscribe__btn-btn:hover {
-  background-color: #FFFFFF;
+  background-color: #F16D7F;
   color: #F16D7F;
   border: 1px solid #F16D7F;
 }

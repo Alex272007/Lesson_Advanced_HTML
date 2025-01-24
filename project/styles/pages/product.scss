@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import "common";
 
 * {
   margin: 0;
@@ -40,21 +41,21 @@ a {
 
 @import "../components/menu";
 
-.breadclumb{
-  background: #F8F3F4;
+.breadclumb {
+  background: #f8f3f4;
 }
 .arrivas {
   @include spacebeet();
   width: 1600px;
   height: 148px;
- 
+
   &__new {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
     color: $colorful;
   }
-  
+
   &__nav {
     display: flex;
     align-items: center;
@@ -65,10 +66,10 @@ a {
       font-weight: 300;
       font-size: 14px;
       line-height: 17px;
-      color: #636363;
+      color: $colArivas;
     }
 
-    &-colorful{
+    &-colorful {
       font-weight: 700;
       font-size: 14px;
       line-height: 17px;
@@ -78,13 +79,122 @@ a {
     & li:not(:last-child)::after {
       content: "/";
       margin: 0 10px;
-      color: #636363;
+      color: $colArivas;
     }
   }
 }
-.slideImage{
-  width: 1600px;
-  height: 777px;
+.slides {
+  background: $backSlid;
+  border: $bordSlid;
+  display: flex;
+  align-items: center;
+
+  &__transition-lf {
+    @include centerflex();
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    cursor: pointer;
+  }
+  &__image {
+    width: 1600px;
+    height: 777px;
+    background: url(/img/image7.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__transition-rg {
+    @include centerflex();
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    cursor: pointer;
+  }
+}
+
+.collect {
+  width: 1140px;
+  height: 600px;
+  background: $backTotal;
+  border: $bordSlid;
+  @include columntext();
+  padding: 65px;
+  margin-bottom: 63px;
+  &__gender {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorful;
+  }
+  &__dash {
+    width: 63px;
+    height: 3px;
+    border: 2px solid $colorful;
+    background: $colorful;
+    margin-bottom: 12px;
+  }
+  &__advert {
+    margin-bottom: 49px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4d4d4d;
+  }
+  &__descript {
+    width: 555px;
+    height: 52px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5e5e5e;
+  }
+  &__price {
+    margin-bottom: 64px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorful;
+  }
+  &__line {
+    width: 642px;
+    height: 1px;
+    background: #eaeaea;
+    border: 1px solid #eaeaea;
+    margin-bottom: 64px;
+  }
+  &__choice {
+    display: flex;
+    justify-content: space-around;
+    gap: 23px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorMenuList;
+    margin-bottom: 49px;
+
+    &-color {
+    }
+  }
+  &__add button{
+    @include centerflex();
+    gap: 23px;
+    width: 212px;
+    height: 49px;
+    &-add {
+      
+      background: none;
+      color: $colorful;
+      border: 1px solid $colorful;
+      font-weight: 400;
+      font-size: 16px;  
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+  }
 }
 
 @import "../components/footer";
