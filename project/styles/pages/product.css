@@ -106,6 +106,8 @@ a {
 }
 
 .menu-heading {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -113,6 +115,8 @@ a {
 }
 
 .menu-text {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -125,6 +129,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 11px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -145,6 +151,8 @@ a {
   height: 148px;
 }
 .arrivas__new {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -157,12 +165,16 @@ a {
   padding-left: 0;
 }
 .arrivas__nav-link {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
   color: #636363;
 }
 .arrivas__nav-colorful {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -206,20 +218,32 @@ a {
   cursor: pointer;
 }
 
+.options {
+  position: absolute;
+  left: -99999999999px;
+  visibility: hidden;
+}
+
+.collect__choice-quantity, .collect__choice-size, .collect__choice-color {
+  display: flex;
+  gap: 5px;
+}
+
 .collect {
-  width: 1140px;
-  height: 600px;
+  transform: translateY(-65px);
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 65px;
   margin-bottom: 63px;
 }
 .collect__gender {
+  padding: 64px;
   margin-bottom: 12px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -234,15 +258,17 @@ a {
 }
 .collect__advert {
   margin-bottom: 49px;
-  font-weight: 400;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   color: #4d4d4d;
 }
 .collect__descript {
-  width: 555px;
-  height: 52px;
   margin-bottom: 32px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -251,6 +277,8 @@ a {
 }
 .collect__price {
   margin-bottom: 64px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
@@ -259,14 +287,16 @@ a {
 .collect__line {
   width: 642px;
   height: 1px;
-  background: #eaeaea;
-  border: 1px solid #eaeaea;
+  background: #EAEAEA;
+  border: 1px solid #EAEAEA;
   margin-bottom: 64px;
 }
 .collect__choice {
   display: flex;
   justify-content: space-around;
   gap: 23px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -274,22 +304,113 @@ a {
   margin-bottom: 49px;
 }
 .collect__add button {
+  padding: 15px 57px 9px 24px;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  border: 1px solid #F16D7F;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  background: none;
+  color: #F16D7F;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 64px;
+}
+.collect .collect__add-btm:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+.collect .collect__add-btm:hover .collect__add-catr {
+  fill: #fff;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 128px;
+}
+.product__card {
+  background: #F8F8F8;
+}
+.product__card-image {
+  position: relative;
+}
+.product__card-bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 56, 56, 0.86);
+  opacity: 0;
+  transition: opacity 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 23px;
-  width: 212px;
-  height: 49px;
 }
-.collect__add button-add {
+.product__card-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product__card-bg button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.product__card-image:hover .product__card-bg {
+  opacity: 1;
+}
+.product__add {
+  width: 139px;
+  height: 44px;
   background: none;
-  color: #F16D7F;
-  border: 1px solid #F16D7F;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+.product__content {
+  padding-left: 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.product__content-name {
+  margin-bottom: 13px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+}
+.product__content-description {
+  margin-bottom: 16px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+}
+.product__content-price {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-  text-align: center;
+  line-height: 19px;
+  color: #F16D7F;
 }
 
 .subscription {
@@ -326,6 +447,8 @@ a {
 }
 .subscription__text {
   width: 359px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -333,6 +456,7 @@ a {
   text-align: center;
 }
 .subscription__text-different {
+  font-family: "Lato";
   font-style: italic;
   font-weight: 400;
   font-size: 20px;
@@ -353,9 +477,11 @@ a {
   font-size: 24px;
 }
 .subscribe__sb-text-content {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 167.2%;
+  line-height: 30px;
   text-align: center;
 }
 .subscribe__btn {
@@ -367,6 +493,8 @@ a {
   min-width: 256px;
   padding: 7px 64px 6px 22px;
   border: none;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -385,6 +513,8 @@ a {
 }
 .subscribe__btn-btn {
   padding: 17px 20px 15px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -397,7 +527,7 @@ a {
   cursor: pointer;
 }
 .subscribe__btn-btn:hover {
-  background-color: #F16D7F;
+  background-color: #FFFFFF;
   color: #F16D7F;
   border: 1px solid #F16D7F;
 }
@@ -415,6 +545,8 @@ a {
   align-items: center;
 }
 .footer__brend {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;

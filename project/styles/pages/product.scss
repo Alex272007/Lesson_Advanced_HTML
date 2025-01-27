@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
 @import "common";
-
 * {
   margin: 0;
   padding: 0;
@@ -50,9 +49,7 @@ a {
   height: 148px;
 
   &__new {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    @include txt('Lato', normal,  400, 24px, 29px);
     color: $colorful;
   }
 
@@ -62,17 +59,13 @@ a {
     list-style-type: none;
     padding-left: 0;
 
-    &-link {
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 17px;
+    &-link { 
+      @include txt('Lato', normal,  300, 14px, 17px);
       color: $colArivas;
     }
 
     &-colorful {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 17px;
+      @include txt('Lato', normal,  700, 14px, 17px);
       color: $colorful;
     }
 
@@ -85,7 +78,7 @@ a {
 }
 .slides {
   background: $backSlid;
-  border: $bordSlid;
+  border: 1px solid $bordSlid;
   display: flex;
   align-items: center;
 
@@ -112,19 +105,26 @@ a {
   }
 }
 
+.options {
+  position: absolute;
+  left: -99999999999px;
+  visibility: hidden;
+}
+
+%choice {
+  display: flex;
+  gap: 5px;
+}
 .collect {
-  width: 1140px;
-  height: 600px;
+  transform: translateY(-65px);
   background: $backTotal;
-  border: $bordSlid;
+  border: 1px solid $bordSlid;
   @include columntext();
-  padding: 65px;
   margin-bottom: 63px;
   &__gender {
+    padding: 64px;
     margin-bottom: 12px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt('Lato', normal,  400, 14px, 17px);
     color: $colorful;
   }
   &__dash {
@@ -136,65 +136,146 @@ a {
   }
   &__advert {
     margin-bottom: 49px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: #4d4d4d;
+    @include txt('Lato', normal,  300, 18px, 22px);
+    color: $colAdvert;
   }
   &__descript {
-    width: 555px;
-    height: 52px;
     margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt('Lato', normal,  400, 14px, 17px);
     text-align: center;
-    color: #5e5e5e;
+    color: $coldesc;
   }
   &__price {
     margin-bottom: 64px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    @include txt('Lato', normal,  400, 24px, 29px);
     color: $colorful;
   }
   &__line {
     width: 642px;
     height: 1px;
-    background: #eaeaea;
-    border: 1px solid #eaeaea;
+    background: $bordSlid;
+    border: 1px solid $bordSlid;
     margin-bottom: 64px;
   }
   &__choice {
     display: flex;
     justify-content: space-around;
     gap: 23px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorMenuList;
+    @include txt('Lato', normal,  400, 14px, 17px);
+    color: $colorList;
     margin-bottom: 49px;
 
     &-color {
+      @extend %choice;
+    }
+    &-size {
+      @extend %choice;
+    }
+    &-quantity {
+      @extend %choice;
     }
   }
-  &__add button{
-    @include centerflex();
+
+  &__add button {
+    padding: 15px 57px 9px 24px;
+    display: flex;
+    align-items: center;
     gap: 23px;
-    width: 212px;
-    height: 49px;
-    &-add {
-      
-      background: none;
+    border: 1px solid $colorful;
+    @include txt('Lato', normal,  400, 16px, 19px);
+    background: none;
+    color: $colorful;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 64px;
+  }
+
+  .collect__add-btm:hover {
+    background-color: $colorful;
+    color: $backTotal; 
+  }
+  .collect__add-btm:hover .collect__add-catr{
+    fill: #fff;
+  }
+}
+ 
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gapProduct;
+  margin-bottom: 128px;
+
+  &__card {
+    background: $backCard;
+
+    &-image {
+      position: relative;
+    }
+
+    &-bg {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(58, 56, 56, 0.86);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      @include centerflex();
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      & button {
+        @include centerflex();
+        gap: 4px;
+      }
+    }
+
+    &-image:hover &-bg {
+      opacity: 1;
+    }
+  }
+
+  &__add {
+    width: 139px;
+    height: 44px;
+    background: none;
+    color: $colorText;
+    border: 1px solid $colorText;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+  }
+
+  &__content {
+    padding-left: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &-name {
+      margin-bottom: 13px;
+      @include txt('Lato', normal,  400, 13px, 16px);
+      color: $colorContName;
+    }
+
+    &-description {
+      margin-bottom: 16px;
+      @include txt('Lato', normal,  400, 14px, 17px);
+      color: $colorContDesc;
+    }
+
+    &-price {
+      @include txt('Lato', normal,  400, 16px, 19px);
       color: $colorful;
-      border: 1px solid $colorful;
-      font-weight: 400;
-      font-size: 16px;  
-      cursor: pointer;
-      transition: transform 0.3s ease;
-      text-align: center;
     }
   }
 }
-
 @import "../components/footer";

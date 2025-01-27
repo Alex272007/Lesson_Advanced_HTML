@@ -1,3 +1,11 @@
+@mixin txt($ff, $fs, $fw, $fz, $lh) {
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+
 // миксины для главной
 @mixin centerflex() {
   display: flex;
@@ -31,3 +39,4 @@
   justify-content: space-between;
   align-items: center;
 }
+

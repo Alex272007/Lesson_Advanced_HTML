@@ -22,16 +22,12 @@
   }
   
   .menu-heading {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt('Lato', normal,  700, 14px, 17px);
     color: $colorMenuHead;
   }
   
   .menu-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt('Lato', normal,  400, 14px, 17px);
     color: $colorful;
     margin-bottom: 12px;
   }
@@ -41,11 +37,9 @@
     display: flex;
     flex-direction: column;
     gap: $gapMenuList;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include txt('Lato', normal,  400, 14px, 17px);
   
     & a {
-      color: $colorMenuList;
+      color: $colorList;
     }
   }

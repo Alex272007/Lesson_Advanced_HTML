@@ -58,15 +58,11 @@ a {
     }
 
     &-title {
-      font-weight: 900;
-      font-size: 48px;
-      line-height: 58px;
+      @include txt('Lato', normal,  900, 48px, 58px);
     }
 
     &-heading {
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 38px;
+      @include txt('Lato', normal,  700, 32px, 38px);
     }
   }
 
@@ -102,16 +98,12 @@ a {
 }
 
 .menu-heading {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  @include txt('Lato', normal,  700, 14px, 17px);
   color: $colorMenuHead;
 }
 
 .menu-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  @include txt('Lato', normal,  400, 14px, 17px);
   color: $colorful;
   margin-bottom: 12px;
 }
@@ -121,12 +113,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: $gapMenuList;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  @include txt('Lato', normal,  400, 14px, 17px);
 
   & a {
-    color: $colorMenuList;
+    color: $colorList;
   }
 }
 
@@ -182,9 +172,7 @@ a {
   }
 
   &__catalog-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    @include txt('Lato', normal,  400, 16px, 19px);
     text-align: center;
     color: $colorText;
   }
@@ -282,24 +270,18 @@ a {
 
     &-name {
       margin-bottom: 13px;
-      font-weight: 400;
-      font-size: 13px;
-      line-height: 16px;
+      @include txt('Lato', normal,  400, 13px, 16px);
       color: $colorContName;
     }
 
     &-description {
       margin-bottom: 16px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
+      @include txt('Lato', normal,  400, 14px, 17px);
       color: $colorContDesc;
     }
 
     &-price {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      @include txt('Lato', normal,  400, 16px, 19px);
       color: $colorful;
     }
   }
@@ -313,9 +295,7 @@ a {
       padding: 15px 39px;
       border: 1px solid $colorful;
       display: block;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      @include txt('Lato', normal,  400, 16px, 19px);
       background: none;
       color: $colorful;
       cursor: pointer;
@@ -352,18 +332,14 @@ a {
     }
 
     & h3 {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 24px;
+      @include txt('Lato', normal,  400, 20px, 24px);
       margin-bottom: 16px;
     }
 
     & p {
       width: 360px;
       height: 34px;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 17px;
+      @include txt('Lato', normal,  300, 14px, 17px);
       color: $colorInform;
     }
   }
@@ -477,15 +453,11 @@ a {
       max-width: 263px;
 
       &-title {
-        font-weight: 900;
-        font-size: 38px;
-        line-height: 46px;
+        @include txt('Lato', normal,  900, 38px, 46px);
       }
 
       &-heading {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
+        @include txt('Lato', normal,  700, 20px, 24px);
       }
     }
   }
@@ -547,9 +519,7 @@ a {
 
       &-middle p {
         min-width: 320px;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include txt('Lato', normal,  300, 14px, 17px);
       }
 
       &-icon {
