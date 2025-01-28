@@ -190,6 +190,7 @@ a {
   background: #F7F7F7;
   border: 1px solid #EAEAEA;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .slides__transition-lf {
