@@ -79,50 +79,7 @@ a {
 .hiden {
   display: none;
 }
-
-.menu-active {
-  padding: 32px;
-  padding-left: 33px;
-  position: absolute;
-  top: 74px;
-  right: 0;
-  background: $backTotal;
-  box-shadow: $boxMenuActiv;
-  margin-bottom: 24px;
-
-  &__all {
-    display: flex;
-    flex-direction: column;
-    gap: $gapMenuActiv;
-  }
-}
-
-.menu-heading {
-  @include txt('Lato', normal,  700, 14px, 17px);
-  color: $colorMenuHead;
-}
-
-.menu-text {
-  @include txt('Lato', normal,  400, 14px, 17px);
-  color: $colorful;
-  margin-bottom: 12px;
-}
-
-.menu-list {
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: $gapMenuList;
-  @include txt('Lato', normal,  400, 14px, 17px);
-
-  & a {
-    color: $colorList;
-  }
-}
-
-.colortext {
-  color: $colorful;
-}
+@import "../components/menu";
 
 .category {
   margin-bottom: 96px;
@@ -309,41 +266,7 @@ a {
   }
 }
 
-.info {
-  background: $bgInform;
-}
-
-.information {
-  padding: 104px 230px;
-  display: flex;
-  justify-content: center;
-  gap: $gapInform;
-
-  &__detailed {
-    @include columntext();
-    color: $colorInform;
-
-    &-icon {
-      margin-bottom: 26px;
-    }
-
-    &-middle {
-      margin-bottom: 19px;
-    }
-
-    & h3 {
-      @include txt('Lato', normal,  400, 20px, 24px);
-      margin-bottom: 16px;
-    }
-
-    & p {
-      width: 360px;
-      height: 34px;
-      @include txt('Lato', normal,  300, 14px, 17px);
-      color: $colorInform;
-    }
-  }
-}
+@import "../components/info";
 
 @import "../components/footer";
 

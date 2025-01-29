@@ -1,0 +1,36 @@
+.breadclumb {
+    background: #f8f3f4;
+  }
+  .arrivas {
+    @include spacebeet();
+    width: 1600px;
+    height: 148px;
+  
+    &__new {
+      @include txt('Lato', normal,  400, 24px, 29px);
+      color: $colorful;
+    }
+  
+    &__nav {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      padding-left: 0;
+  
+      &-link { 
+        @include txt('Lato', normal,  300, 14px, 17px);
+        color: $colArivas;
+      }
+  
+      &-colorful {
+        @include txt('Lato', normal,  700, 14px, 17px);
+        color: $colorful;
+      }
+  
+      & li:not(:last-child)::after {
+        content: "/";
+        margin: 0 10px;
+        color: $colArivas;
+      }
+    }
+  }

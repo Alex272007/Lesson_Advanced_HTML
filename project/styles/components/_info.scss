@@ -1,0 +1,35 @@
+.info {
+    background: $bgInform;
+  }
+  
+  .information {
+    padding: 104px 230px;
+    display: flex;
+    justify-content: center;
+    gap: $gapInform;
+  
+    &__detailed {
+      @include columntext();
+      color: $colorInform;
+  
+      &-icon {
+        margin-bottom: 26px;
+      }
+  
+      &-middle {
+        margin-bottom: 19px;
+      }
+  
+      & h3 {
+        @include txt('Lato', normal,  400, 20px, 24px);
+        margin-bottom: 16px;
+      }
+  
+      & p {
+        width: 360px;
+        height: 34px;
+        @include txt('Lato', normal,  300, 14px, 17px);
+        color: $colorInform;
+      }
+    }
+  }
