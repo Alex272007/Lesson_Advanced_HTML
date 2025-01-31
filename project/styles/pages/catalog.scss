@@ -1,10 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import "common";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   outline: none;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
 
 html {
@@ -39,6 +48,124 @@ a {
 @import "../components/header";
 @import "../components/menu";
 @import "../components/breadclumb";
+
+.filter-sort {
+  height: 132px;
+  z-index: 10;
+  padding-top: 39px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  gap: $gapProduct;
+}
+
+.filter {
+  padding-top: 13px;
+  width: 360px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
+
+  &__content {
+    background-color: $backTotal;
+    padding-top: 0;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+  }
+
+  &[open] {
+    background: $backTotal;
+    box-shadow: $boxMenuActiv;
+  }
+
+  &[open] .filter__heading {
+    color: $colorful;
+  }
+  &[open] path {
+    fill: $colorful;
+  }
+
+  &__summary {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-left: 16px;
+  }
+  &__heading {
+    @include txt("Lato", normal, 600, 14px, 17px);
+    color: $colorContent;
+  }
+  &__item {
+    margin-top: 16px;
+  }
+  &__head {
+    @include txt("Lato", normal, 400, 14px, 17px);
+    color: $colorList;
+    padding: 8px 11px 11px 11px;
+    border-left: 5px solid $colorful;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  &__item[open] .filter__head {
+    color: $colorful;
+  }
+
+  &__link-box {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding: 24px 16px 12px 16px;
+  }
+
+  &__link {
+    @include txt("Lato", normal, 400, 14px, 17px);
+    color: $colorList;
+    &:hover {
+      color: $colorful;
+    }
+  }
+}
+.sort {
+  padding-top: 12px;
+  display: flex;
+  gap: 28px;
+ 
+  &__details{
+    position: relative;
+  } 
+  &__summary{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  &__check{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    @include txt("Roboto", normal, 400, 14px, 17px);
+    color: $colorList;
+  }
+  
+  
+  &__heading{
+    @include txt("Lato", normal, 400, 14px, 17px);
+    color: $colorList;
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: $backTotal;
+    box-shadow: $boxMenuActiv;
+    padding: 7px 30px 11px 9px;
+    position: absolute;
+    left: -8px;
+    top: 20px;
+  }
+}
 
 .product {
   display: grid;
@@ -104,18 +231,18 @@ a {
 
     &-name {
       margin-bottom: 13px;
-      @include txt('Lato', normal,  400, 13px, 16px);
+      @include txt("Lato", normal, 400, 13px, 16px);
       color: $colorContName;
     }
 
     &-description {
       margin-bottom: 16px;
-      @include txt('Lato', normal,  400, 14px, 17px);
+      @include txt("Lato", normal, 400, 14px, 17px);
       color: $colorContDesc;
     }
 
     &-price {
-      @include txt('Lato', normal,  400, 16px, 19px);
+      @include txt("Lato", normal, 400, 16px, 19px);
       color: $colorful;
     }
   }
@@ -129,7 +256,7 @@ a {
       padding: 15px 39px;
       border: 1px solid $colorful;
       display: block;
-      @include txt('Lato', normal,  400, 16px, 19px);
+      @include txt("Lato", normal, 400, 16px, 19px);
       background: none;
       color: $colorful;
       cursor: pointer;
@@ -141,6 +268,12 @@ a {
       color: $backTotal;
     }
   }
+}
+
+.page-numbering {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96px;
 }
 
 @import "../components/info";

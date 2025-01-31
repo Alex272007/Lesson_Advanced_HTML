@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles/pages/catalog.css" />
   </head>
 
@@ -83,7 +94,6 @@
     </header>
 
     <main class="main">
-
       <div class="menu-active hiden">
         <div class="menu-active__all">
           <h4 class="menu-heading">MENU</h4>
@@ -131,14 +141,116 @@
             </ul>
           </nav>
         </div>
-      </section> 
+      </section>
+
+      <div class="filter-sort container">
+        <details class="filter">
+          <summary class="filter__summary">
+            <span class="filter__heading">FILTER</span>
+            <svg
+              width="15"
+              height="10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M.833 10h3.334A.836.836 0 0 0 5 9.167a.836.836 0 0 0-.833-.834H.833A.836.836 0 0 0 0 9.167c0 .458.375.833.833.833ZM0 .833c0 .459.375.834.833.834h13.334A.836.836 0 0 0 15 .833.836.836 0 0 0 14.167 0H.833A.836.836 0 0 0 0 .833Zm.833 5h8.334A.836.836 0 0 0 10 5a.836.836 0 0 0-.833-.833H.833A.836.836 0 0 0 0 5c0 .458.375.833.833.833Z"
+                fill="#000"
+              />
+            </svg>
+          </summary>
+          <div class="filter__content">
+            <details class="filter__item">
+              <summary class="filter__head">CATEGORY</summary>
+             <div class="filter__link-box">
+              <a href="#" class="filter__link">Accessories</a>
+              <a href="#" class="filter__link">Bags</a>
+              <a href="#" class="filter__link"> Denim</a>
+              <a href="#" class="filter__link">Hoodies &amp;&nbsp;Sweatshirts </a>
+              <a href="#" class="filter__link">Jackets &amp;&nbsp;Coats</a>
+              <a href="#" class="filter__link">Polos</a>
+              <a href="#" class="filter__link">Shirts</a>
+              <a href="#" class="filter__link">Shoes</a>
+              <a href="#" class="filter__link">Sweaters &amp;&nbsp;Knits</a>
+              <a href="#" class="filter__link">T-Shirts</a>
+              <a href="#" class="filter__link">Tanks</a>
+             </div>
+            </details>
+            <details class="filter__item">
+              <summary class="filter__head">BRAND</summary>  <div class="filter__link-box">
+                <a href="#" class="filter__link">Accessories</a>
+                <a href="#" class="filter__link">Bags</a>
+                <a href="#" class="filter__link"> Denim</a>
+                <a href="#" class="filter__link">Hoodies &amp;&nbsp;Sweatshirts </a>
+                <a href="#" class="filter__link">Jackets &amp;&nbsp;Coats</a>
+                <a href="#" class="filter__link">Polos</a>
+                <a href="#" class="filter__link">Shirts</a>
+                <a href="#" class="filter__link">Shoes</a>
+                <a href="#" class="filter__link">Sweaters &amp;&nbsp;Knits</a>
+                <a href="#" class="filter__link">T-Shirts</a>
+                <a href="#" class="filter__link">Tanks</a>
+               </div>
+            </details>
+            <details class="filter__item">
+              <summary class="filter__head">DESIGNER</summary>  <div class="filter__link-box">
+                <a href="#" class="filter__link">Accessories</a>
+                <a href="#" class="filter__link">Bags</a>
+                <a href="#" class="filter__link"> Denim</a>
+                <a href="#" class="filter__link">Hoodies &amp;&nbsp;Sweatshirts </a>
+                <a href="#" class="filter__link">Jackets &amp;&nbsp;Coats</a>
+                <a href="#" class="filter__link">Polos</a>
+                <a href="#" class="filter__link">Shirts</a>
+                <a href="#" class="filter__link">Shoes</a>
+                <a href="#" class="filter__link">Sweaters &amp;&nbsp;Knits</a>
+                <a href="#" class="filter__link">T-Shirts</a>
+                <a href="#" class="filter__link">Tanks</a>
+               </div>
+            </details>
+          </div>
+        </details>
+        <div class="sort">
+          <details class="sort__details">
+            <summary class="sort__summary"><span class="sort__heading">TRENDING NOW</span>
+              <svg width="11" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.002 5.002a.714.714 0 0 1-.457-.164L.258 1.266a.715.715 0 0 1 .915-1.1l3.83 3.2L8.831.28a.714.714 0 0 1 1.007.107.714.714 0 0 1-.1 1.043L5.452 4.88a.714.714 0 0 1-.45.122Z" fill="#6F6E6E"/>
+              </svg>
+            </summary>
+          </details>
+          <details class="sort__details">
+            <summary class="sort__summary"><span class="sort__heading">SIZE </span>
+              <svg width="11" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.002 5.002a.714.714 0 0 1-.457-.164L.258 1.266a.715.715 0 0 1 .915-1.1l3.83 3.2L8.831.28a.714.714 0 0 1 1.007.107.714.714 0 0 1-.1 1.043L5.452 4.88a.714.714 0 0 1-.45.122Z" fill="#6F6E6E"/>
+              </svg>
+            </summary>
+            <div class="sort__box">
+                <div class="sort__check">
+                  <input id="sort__check1" type="checkbox">
+                  <label for="sort__check1">XS</label>
+                </div>
+                <div class="sort__check">
+                  <input id="sort__check2" type="checkbox">
+                  <label for="sort__check2">S</label>
+                </div>
+                <div class="sort__check">
+                  <input id="sort__check3" type="checkbox">
+                  <label for="sort__check3">M</label>
+                </div>
+                <div class="sort__check">
+                  <input id="sort__check4" type="checkbox">
+                  <label for="sort__check4">L</label>
+                </div>
+            </div>
+          </details>
+          <details class="sort__details">
+            <summary class="sort__summary"><span class="sort__heading">PRICE</span><svg width="11" height="5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.002 5.002a.714.714 0 0 1-.457-.164L.258 1.266a.715.715 0 0 1 .915-1.1l3.83 3.2L8.831.28a.714.714 0 0 1 1.007.107.714.714 0 0 1-.1 1.043L5.452 4.88a.714.714 0 0 1-.45.122Z" fill="#6F6E6E"/></svg></summary>
+          </details>
+        </div>
+      </div>
 
       <div class="product container">
         <div class="product__card">
-           <a class="product__card-image" href="./products.html">
+          <a class="product__card-image" href="./products.html">
             <img src="../img/image1.webp" alt="Product" />
             <div class="product__card-bg">
-              <button class="product__add" >
+              <button class="product__add">
                 <svg
                   width="27"
                   height="25"
@@ -165,11 +277,13 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
-            </div>
-          </div> 
+          </div>
+        </div>
 
         <div class="product__card">
           <a class="product__card-image" href="./products.html">
@@ -202,7 +316,9 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
           </div>
@@ -239,7 +355,9 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
           </div>
@@ -276,7 +394,9 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
           </div>
@@ -313,7 +433,9 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
           </div>
@@ -350,7 +472,9 @@
           <div class="product__content">
             <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
             <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
             </p>
             <h3 class="product__content-price">$52.00</h3>
           </div>
@@ -358,151 +482,196 @@
 
         <div class="product__card">
           <a class="product__card-image" href="./products.html">
-           <img src="../img/image10.webp" alt="Product" />
-           <div class="product__card-bg">
-             <button class="product__add" >
-               <svg
-                 width="27"
-                 height="25"
-                 fill="none"
-                 xmlns="http://www.w3.org/2000/svg"
-               >
-                 <path
-                   d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-               </svg>
-               Add to Cart
-             </button>
-           </div>
-         </a>
-         <div class="product__content">
-           <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-           <p class="product__content-description">
-             Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
-           </p>
-           <h3 class="product__content-price">$52.00</h3>
-           </div>
-         </div>
-         
-         <div class="product__card">
+            <img src="../img/image10.webp" alt="Product" />
+            <div class="product__card-bg">
+              <button class="product__add">
+                <svg
+                  width="27"
+                  height="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                </svg>
+                Add to Cart
+              </button>
+            </div>
+          </a>
+          <div class="product__content">
+            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
+            <p class="product__content-description">
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
+            </p>
+            <h3 class="product__content-price">$52.00</h3>
+          </div>
+        </div>
+
+        <div class="product__card">
           <a class="product__card-image" href="./products.html">
-           <img src="../img/image11.webp" alt="Product" />
-           <div class="product__card-bg">
-             <button class="product__add" >
-               <svg
-                 width="27"
-                 height="25"
-                 fill="none"
-                 xmlns="http://www.w3.org/2000/svg"
-               >
-                 <path
-                   d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-               </svg>
-               Add to Cart
-             </button>
-           </div>
-         </a>
-         <div class="product__content">
-           <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-           <p class="product__content-description">
-             Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
-           </p>
-           <h3 class="product__content-price">$52.00</h3>
-           </div>
-         </div> 
-         
-         <div class="product__card">
+            <img src="../img/image11.webp" alt="Product" />
+            <div class="product__card-bg">
+              <button class="product__add">
+                <svg
+                  width="27"
+                  height="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                </svg>
+                Add to Cart
+              </button>
+            </div>
+          </a>
+          <div class="product__content">
+            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
+            <p class="product__content-description">
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
+            </p>
+            <h3 class="product__content-price">$52.00</h3>
+          </div>
+        </div>
+
+        <div class="product__card">
           <a class="product__card-image" href="./products.html">
-           <img src="../img/image12.webp" alt="Product" />
-           <div class="product__card-bg">
-             <button class="product__add" >
-               <svg
-                 width="27"
-                 height="25"
-                 fill="none"
-                 xmlns="http://www.w3.org/2000/svg"
-               >
-                 <path
-                   d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-                 <path
-                   d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                   fill="#fff"
-                 />
-               </svg>
-               Add to Cart
-             </button>
-           </div>
-         </a>
-         <div class="product__content">
-           <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-           <p class="product__content-description">
-             Known for her sculptural takes on&nbsp;traditional tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.
-           </p>
-           <h3 class="product__content-price">$52.00</h3>
-           </div>
-         </div> 
+            <img src="../img/image12.webp" alt="Product" />
+            <div class="product__card-bg">
+              <button class="product__add">
+                <svg
+                  width="27"
+                  height="25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                  <path
+                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
+                    fill="#fff"
+                  />
+                </svg>
+                Add to Cart
+              </button>
+            </div>
+          </a>
+          <div class="product__content">
+            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
+            <p class="product__content-description">
+              Known for her sculptural takes on&nbsp;traditional
+              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
+              up&nbsp;with Moda Operandi.
+            </p>
+            <h3 class="product__content-price">$52.00</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-numbering">
+        <nav aria-label="Navigation by product cards">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Предыдущая">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li>
+            <li class="page-item"><a class="page-link" href="#">8</a></li>
+            <li class="page-item"><a class="page-link" href="#">9</a></li>
+            <li class="page-item"><a class="page-link" href="#">10</a></li>
+            <li class="page-item"><a class="page-link" href="#">11</a></li>
+            <li class="page-item"><a class="page-link" href="#">12</a></li>
+            <li class="page-item"><a class="page-link" href="#">13</a></li>
+            <li class="page-item"><a class="page-link" href="#">14</a></li>
+            <li class="page-item"><a class="page-link" href="#">15</a></li>
+            <li class="page-item"><a class="page-link" href="#">16</a></li>
+            <li class="page-item"><a class="page-link" href="#">17</a></li>
+            <li class="page-item"><a class="page-link" href="#">18</a></li>
+            <li class="page-item"><a class="page-link" href="#">19</a></li>
+            <li class="page-item"><a class="page-link" href="#">20</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Следующая">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <section class="info">
         <div class="information container">
-        <div class="information__detailed">
-          <div class="information__detailed-icon">
-            <img src="../img/iconInformation1.svg" alt="Info" />
-          </div>
+          <div class="information__detailed">
+            <div class="information__detailed-icon">
+              <img src="../img/iconInformation1.svg" alt="Info" />
+            </div>
 
-          <h3>Free Delivery</h3>
-          <p>
-            Worldwide delivery on all.Authorit tively morph<br> next-generation innov tion with extensive models.
-          </p>
-        </div>
-        <div class="information__detailed">
-          <div class="information__detailed-middle">
-            <img src="../img/iconInformation2.svg" alt="info" />
+            <h3>Free Delivery</h3>
+            <p>
+              Worldwide delivery on all.Authorit tively morph<br />
+              next-generation innov tion with extensive models.
+            </p>
           </div>
+          <div class="information__detailed">
+            <div class="information__detailed-middle">
+              <img src="../img/iconInformation2.svg" alt="info" />
+            </div>
 
-          <h3>Sales &amp;&nbsp;discounts</h3>
-          <p>
-            Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.
-          </p>
-        </div>
-        <div class="information__detailed">
-          <div class="information__detailed-icon">
-            <img src="../img/iconInformation3.svg" alt="info" />
+            <h3>Sales &amp;&nbsp;discounts</h3>
+            <p>
+              Worldwide delivery on all. Authorit tively morph<br />
+              next-generation innov tion with extensive models.
+            </p>
           </div>
+          <div class="information__detailed">
+            <div class="information__detailed-icon">
+              <img src="../img/iconInformation3.svg" alt="info" />
+            </div>
 
-          <h3>Quality assurance</h3>
-          <p>
-            Worldwide delivery on all.Authorit tively morph<br> next-generation innov tion with extensive models.
-          </p>
+            <h3>Quality assurance</h3>
+            <p>
+              Worldwide delivery on all.Authorit tively morph<br />
+              next-generation innov tion with extensive models.
+            </p>
+          </div>
         </div>
-      </div>
       </section>
-
     </main>
     <footer class="footer">
       <section class="subscription crop">
