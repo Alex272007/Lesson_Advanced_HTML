@@ -430,10 +430,46 @@ a {
   color: #FFFFFF;
 }
 
-.page-numbering {
+.pages {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  width: 284px;
+  height: 44px;
   margin-bottom: 96px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn, .page-btn {
+  background: #FFFFFF;
+  border: none;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6F6E6E;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.nav-btn:hover, .page-btn:hover {
+  color: #F16D7F;
+}
+.nav-btn:hover .nav-browsing, .page-btn:hover .nav-browsing {
+  fill: #F16D7F;
 }
 
 .info {

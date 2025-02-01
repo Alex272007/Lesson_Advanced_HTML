@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "common";
 * {
@@ -130,31 +130,30 @@ a {
   padding-top: 12px;
   display: flex;
   gap: 28px;
- 
-  &__details{
+
+  &__details {
     position: relative;
-  } 
-  &__summary{
+  }
+  &__summary {
     display: flex;
     align-items: center;
     gap: 10px;
   }
- 
-  &__check{
+
+  &__check {
     display: flex;
     gap: 9px;
     align-items: center;
     @include txt("Roboto", normal, 400, 14px, 17px);
     color: $colorList;
   }
-  
-  
-  &__heading{
+
+  &__heading {
     @include txt("Lato", normal, 400, 14px, 17px);
     color: $colorList;
   }
 
-  &__box{
+  &__box {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -270,10 +269,43 @@ a {
   }
 }
 
-.page-numbering {
+.pages {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  width: 284px;
+  height: 44px;
   margin-bottom: 96px;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+  
+ 
+.page-numbers{
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn, .page-btn {
+  background:$backTotal;
+  border: none;
+  @include txt("Lato", normal, 300, 16px, 19px);
+  color: $colorList;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    color: $colorful;
+  }
+  &:hover .nav-browsing {
+    fill: $colorful;
+  }
 }
 
 @import "../components/info";
