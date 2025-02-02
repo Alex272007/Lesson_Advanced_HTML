@@ -20,6 +20,9 @@
       &-link { 
         @include txt('Lato', normal,  300, 14px, 17px);
         color: $colArivas;
+        &:hover{
+          color: $colorful
+        }
       }
   
       &-colorful {

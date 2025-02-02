@@ -293,7 +293,7 @@ a {
   gap: 15px;
 }
 
-.nav-btn, .page-btn {
+.nav-btn, .page-btn, .ellipsis {
   background:$backTotal;
   border: none;
   @include txt("Lato", normal, 300, 16px, 19px);
@@ -303,8 +303,8 @@ a {
   &:hover {
     color: $colorful;
   }
-  &:hover .nav-browsing {
-    fill: $colorful;
+  &-carefull{
+    color: $colorful;
   }
 }
 

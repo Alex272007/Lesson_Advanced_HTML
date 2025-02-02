@@ -172,6 +172,9 @@ a {
   line-height: 17px;
   color: #636363;
 }
+.arrivas__nav-link:hover {
+  color: #F16D7F;
+}
 .arrivas__nav-colorful {
   font-family: "Lato";
   font-style: normal;

@@ -180,6 +180,9 @@ a {
   line-height: 17px;
   color: #636363;
 }
+.arrivas__nav-link:hover {
+  color: #F16D7F;
+}
 .arrivas__nav-colorful {
   font-family: "Lato";
   font-style: normal;
@@ -453,7 +456,7 @@ a {
   gap: 15px;
 }
 
-.nav-btn, .page-btn {
+.nav-btn, .page-btn, .ellipsis {
   background: #FFFFFF;
   border: none;
   font-family: "Lato";
@@ -465,11 +468,11 @@ a {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.nav-btn:hover, .page-btn:hover {
+.nav-btn:hover, .page-btn:hover, .ellipsis:hover {
   color: #F16D7F;
 }
-.nav-btn:hover .nav-browsing, .page-btn:hover .nav-browsing {
-  fill: #F16D7F;
+.nav-btn-carefull, .page-btn-carefull, .ellipsis-carefull {
+  color: #F16D7F;
 }
 
 .info {
