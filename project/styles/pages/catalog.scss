@@ -78,7 +78,9 @@ a {
     background: $backTotal;
     box-shadow: $boxMenuActiv;
   }
-
+  &[open] .filter__content {
+    box-shadow: $boxMenuActiv;
+  }
   &[open] .filter__heading {
     color: $colorful;
   }
@@ -286,15 +288,16 @@ a {
   align-items: center;
   gap: 15px;
 }
-  
- 
-.page-numbers{
+
+.page-numbers {
   display: flex;
   gap: 15px;
 }
 
-.nav-btn, .page-btn, .ellipsis {
-  background:$backTotal;
+.nav-btn,
+.page-btn,
+.ellipsis {
+  background: $backTotal;
   border: none;
   @include txt("Lato", normal, 300, 16px, 19px);
   color: $colorList;
@@ -303,7 +306,7 @@ a {
   &:hover {
     color: $colorful;
   }
-  &-carefull{
+  &-carefull {
     color: $colorful;
   }
 }

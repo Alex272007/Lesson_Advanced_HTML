@@ -82,12 +82,13 @@ a {
 }
 .collect {
   transform: translateY(-65px);
+  box-sizing: border-box;
   background: $backTotal;
   border: 1px solid $bordSlid;
   @include columntext();
   margin-bottom: 63px;
   &__gender {
-    padding: 64px;
+    padding-top: 64px;
     margin-bottom: 12px;
     @include txt('Lato', normal,  400, 14px, 17px);
     color: $colorful;
@@ -141,7 +142,7 @@ a {
     }
   }
 
-  &__add button {
+  &__add-btm {
     padding: 15px 57px 9px 24px;
     display: flex;
     align-items: center;

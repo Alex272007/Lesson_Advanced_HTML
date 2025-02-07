@@ -235,6 +235,7 @@ a {
 
 .collect {
   transform: translateY(-65px);
+  box-sizing: border-box;
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   display: flex;
@@ -244,7 +245,7 @@ a {
   margin-bottom: 63px;
 }
 .collect__gender {
-  padding: 64px;
+  padding-top: 64px;
   margin-bottom: 12px;
   font-family: "Lato";
   font-style: normal;
@@ -307,7 +308,7 @@ a {
   color: #6F6E6E;
   margin-bottom: 49px;
 }
-.collect__add button {
+.collect__add-btm {
   padding: 15px 57px 9px 24px;
   display: flex;
   align-items: center;
