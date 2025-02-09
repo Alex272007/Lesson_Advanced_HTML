@@ -107,18 +107,16 @@ a {
       display: flex;
       flex-direction: column;
     }
-
     .ship {
       margin-bottom: 20px;
-    }
-    .ship-text {
-      @include txt("Lato", normal, 400, 16px, 19px);
-      color: $colorContent;
+      &-text {
+        @include txt("Lato", normal, 400, 16px, 19px);
+        color: $colorContent;
+      }
     }
     fieldset {
       border: none;
     }
-
     .input {
       width: 360px;
       height: 45px;

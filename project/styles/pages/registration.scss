@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");
+@import "common";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: $backTotal;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: $widthSite;
+  margin: 0 auto;
+}
+
+@import "../components/header";
+@import "../components/menu";
+@import "../components/breadclumb";
+
+fieldset {
+  border: none;
+}
+legend {
+  @include txt("Lato", normal, 400, 16px, 19px);
+  color: $colorContent;
+  margin-bottom: 20px;
+}
+input {
+  width: 360px;
+  height: 45px;
+  box-sizing: border-box;
+  background: $backTotal;
+  border: 1px solid $colForm;
+  padding-left: 17px;
+}
+.registr {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px;
+  box-sizing: border-box;
+  &__full {
+    &-info {
+      width: 360px;
+      height: 149px;
+      margin-bottom: 31px;
+      form fieldset {
+        display: flex;
+        flex-direction: column;
+      }
+      form input {
+        border: 1px solid #a4a4a4;
+      }
+    }
+    &-gender {
+      width: 132px;
+      height: 17px;
+      box-sizing: border-box;
+      @include txt("Lato", normal, 400, 11px, 13px);
+      color: #000000;
+      margin-bottom: 33px;
+      form fieldset {
+        display: flex;
+        justify-content: space-around;
+      }
+      form input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: 1px solid $colBorder;
+        appearance: none;
+      }
+      form label {
+        width: 80px;
+      }
+    }
+    &-inform {
+      width: 360px;
+      height: 149px;
+      margin-bottom: 15px;
+      form fieldset {
+        display: flex;
+        flex-direction: column;
+      }
+      form input {
+        border: 1px solid $colBorder;
+      }
+    }
+    &-psvtext {
+      width: 359px;
+      height: 32px;
+      @include txt("Lato", normal, 400, 13px, 16px);
+      color: #b1b1b1;
+      margin-bottom: 39px;
+    }
+    &-btm {
+      padding: 16px 29px 17px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: $colorful;
+      border: none;
+      @include txt("Lato", normal, 400, 14px, 17px);
+      color: $colorText;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-bottom: 96px;
+    }
+    .registr__full-btm:hover{
+      background-color: $backTotal;
+      color: $colorful;
+      border: 1px solid $colorful;
+    }
+    .registr__full-btm:hover .registr__full-reg{
+      fill: $colorful; 
+    }
+  }
+}
+
+.loyalty {
+  width: 652px;
+  height: 334px;
+  @include txt("Lato", normal, 400, 24px, 29px);
+  color: #000000;
+  &-goal {
+    margin-bottom: 22px;
+  }
+  &__advantages {
+    margin-bottom: 21px;
+    &-enum {
+      margin-bottom: 16px;
+    }
+  }
+}
+@import "../components/footer";

@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
-    <link rel="stylesheet" href="./styles/pages/product.css" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/pages/registration.css" />
   </head>
-
-  <body class="products">
+  <body class="registration">
     <header class="header">
       <nav class="navigation container">
         <h2 style="display: none">Navigation</h2>
@@ -83,7 +82,6 @@
         </div>
       </nav>
     </header>
-
     <main class="main">
       <div class="menu-active hiden">
         <div class="menu-active__all">
@@ -122,235 +120,101 @@
       </div>
       <section class="breadclumb">
         <div class="arrivas container">
-          <h2 class="arrivas__new">NEW ARRIVALS</h2>
-          <nav>
-            <ul class="arrivas__nav">
-              <li><a class="arrivas__nav-link" href="./index.html">HOME</a></li>
-              <li><a class="arrivas__nav-link" href="#">MEN</a></li>
-              <li class="arrivas__nav-colorful">NEW ARRIVALS</li>
-            </ul>
-          </nav>
+          <h2 class="arrivas__new">REGISTRATION</h2>
         </div>
       </section>
 
-      <section class="slides">
-        <div class="slides__transition-lf">
-          <img src="/img/movleft.webp" alt="Left" />
+      <section class="registr container">
+        <div class="registr__full" >
+        <div class="registr__full-info">
+          <form action="#">
+            <fieldset>
+              <legend class="info">Your Name</legend>
+              <label for="name"></label>
+              <input
+                class="input"
+                id="name"
+                placeholder="First Name"
+                autofocus
+                required
+                pattern="\S+[А-яа-я]"
+              />
+              <br />
+              <label for="lastName"></label>
+              <input
+                class="input"
+                id="lastName"
+                placeholder="Last Name"
+                required
+                pattern="\S+[А-яа-я]"
+              />
+            </fieldset>
+          </form>
+          </div>
+        <div class="registr__full-gender">
+           <form action="#">  
+            <fieldset>
+              <label for="male">
+                <input id="male" type="checkbox" /> &emsp;Male</label
+              >
+              <label for="female">
+                <input id="female" type="checkbox" /> &emsp;Female</label
+              >
+            </fieldset> 
+          </form>
+          </div>
+        <div class="registr__full-inform"> 
+           <form action="#"> 
+            <fieldset> 
+              <legend>Login details</legend>
+              <label for="email"></label>
+              <input
+                id="email"
+                placeholder="email@server.com"
+                required
+                pattern="\S+@[a-z]+.[a-z]+"
+              />
+              <br />
+              <label for="password"></label>
+              <input 
+                id="password"
+                placeholder="Password"
+                required
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
+              /> 
+            </fieldset>
+          </form>
+          </div>
+              <p class="registr__full-psvtext">
+                Please use 8&nbsp;or more characters, with at&nbsp;least
+                1&nbsp;number and a&nbsp;mixture of&nbsp;uppercase and lowercase
+                letters
+              </p>
+              
+               <div >
+                <form action="#"> 
+                <button input class="registr__full-btm" type="submit" value="" >JOIN NOW 
+                  <svg class="registr__full-reg" width="17" height="10" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.54.208a.709.709 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.96a.708.708 0 0 1 .708-.709h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.959Z" /></svg>
+                </button>
+              
+          </form>
         </div>
-        <div class="slides__image"></div>
-        <div class="slides__transition-rg">
-          <img src="/img/movright.webp" alt="Rigth" />
-        </div>
+      </div>
+        <article class="loyalty">
+            <p class="loyalty-goal">LOYALTY HAS ITS PERKS</p>
+            <p class="loyalty__advantages">
+              Get in&nbsp;on&nbsp;the loyalty program where you can earn points
+              and unlock serious perks. Starting with these as&nbsp;soon
+              as&nbsp;you join:
+            </p>
+            <p class="loyalty__advantages-enum">15% off welcome offer</p>
+            <p class="loyalty__advantages-enum">Free shipping, returns and exchanges on&nbsp;all orders</p>
+            <p class="loyalty__advantages-enum">$10 off a&nbsp;purchase on&nbsp;your birthday</p>
+            <p class="loyalty__advantages-enum">Early access to&nbsp;products</p>
+            <p class="loyalty__advantages-enum">Exclusive offers &amp;&nbsp;rewards</p>
+        </article>
       </section>
-
-      <div class="collect container">
-        <p class="collect__gender">WOMEN COLLECTION</p>
-        <p class="collect__dash"></p>
-        <h3 class="collect__advert">MOSCHINO CHEAP AND CHIC</h3>
-        <p class="collect__descript">
-          Compellingly actualize fully researched processes before proactive
-          outsourcing.<br />
-          Progressively syndicate collaborative architectures before
-          cutting-edge services. Completely<br />visualize parallel core
-          competencies rather than exceptional portals.
-        </p>
-        <h3 class="collect__price">$561</h3>
-        <p class="collect__line"></p>
-        <div class="collect__choice">
-          <div class="collect__choice-color">
-            <h3>CHOOSE COLOR</h3>
-            <form action="">
-              <input class="options" id="choice" type="checkbox" />
-              <label for="choice">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  />
-                </svg>
-              </label>
-            </form>
-          </div>
-          <div class="collect__choice-size">
-            <h3>CHOOSE SIZE</h3>
-            <form action="">
-              <label>
-                <input class="options" id="size" type="checkbox" />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  />
-                </svg>
-              </label>
-            </form>
-          </div>
-          <div class="collect__choice-quantity">
-            <h3>QUANTITY</h3>
-            <form action="">
-              <label>
-                <input class="options" id="quantity" type="checkbox" />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1em"
-                  viewBox="0 0 512 512"
-                >
-                  <path
-                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                  />
-                </svg>
-              </label>
-            </form>
-          </div>
-        </div>
-        <a class="collect__add" href="../project/cart.html">
-          <button class="collect__add-btm">
-            <svg
-              class="collect__add-catr"
-              width="27"
-              height="25"
-              fill="#F16D7F"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-              />
-              <path
-                d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-              />
-              <path
-                d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-              />
-            </svg>
-            Add to Cart
-          </button>
-        </a>
-      </div>
-
-      <div class="product container">
-        <div class="product__card">
-          <a class="product__card-image" href="./products.html">
-            <img src="../img/image4.webp" alt="Product" />
-            <div class="product__card-bg">
-              <button class="product__add">
-                <svg
-                  width="27"
-                  height="25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                </svg>
-                Add to Cart
-              </button>
-            </div>
-          </a>
-          <div class="product__content">
-            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-            <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional
-              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
-              up&nbsp;with Moda Operandi.
-            </p>
-            <h3 class="product__content-price">$52.00</h3>
-          </div>
-        </div>
-        <div class="product__card">
-          <a class="product__card-image" href="./products.html">
-            <img src="../img/image3.webp" alt="Product" />
-            <div class="product__card-bg">
-              <button class="product__add">
-                <svg
-                  width="27"
-                  height="25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                </svg>
-                Add to Cart
-              </button>
-            </div>
-          </a>
-          <div class="product__content">
-            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-            <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional
-              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
-              up&nbsp;with Moda Operandi.
-            </p>
-            <h3 class="product__content-price">$52.00</h3>
-          </div>
-        </div>
-        <div class="product__card">
-          <a class="product__card-image" href="./products.html">
-            <img src="../img/image6.webp" alt="Product" />
-            <div class="product__card-bg">
-              <button class="product__add">
-                <svg
-                  width="27"
-                  height="25"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M21.952 23.266h-.112c-.61 0-1.121-.5-1.165-1.137-.045-.669.444-1.25 1.089-1.295a1.196 1.196 0 0 1 1.258 1.114c.011.249-.03.603-.285.895l-.006.007-.006.007a1.158 1.158 0 0 1-.773.41ZM8.22 23.26c-.65 0-1.18-.543-1.18-1.21 0-.667.53-1.21 1.18-1.21.65 0 1.18.543 1.18 1.21 0 .667-.53 1.21-1.18 1.21Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                  <path
-                    d="M21.877 22.266a.146.146 0 0 0 .084-.053c.007-.01.015-.018.023-.027.036-.042.04-.13.039-.175-.013-.107-.104-.18-.181-.18h-.01c-.078.006-.166.11-.16.232.01.116.096.203.168.203h.037ZM8.22 22.26c.1 0 .18-.095.18-.21 0-.116-.08-.21-.18-.21-.1 0-.18.094-.18.21 0 .116.08.21.18.21ZM22 24.266h-.16c-1.138 0-2.083-.911-2.163-2.068-.08-1.205.817-2.28 2.019-2.362.049-.003.097-.005.146-.005 1.138 0 2.1.901 2.178 2.057.031.603-.145 1.173-.53 1.613a2.16 2.16 0 0 1-1.49.765ZM8.22 24.26c-1.204 0-2.18-.99-2.18-2.21s.976-2.21 2.18-2.21c1.204 0 2.18.99 2.18 2.21s-.976 2.21-2.18 2.21Zm12.979-6.866H9.134a.965.965 0 0 1-.93-.716L4.278 2.247H1.522a.972.972 0 0 1-.961-.978c0-.537.433-.977.961-.977H5c.432 0 .816.293.929.717l3.925 14.43h10.704l3.557-8.306H12.258a.973.973 0 0 1-.962-.978c0-.537.433-.977.962-.977H25.59a.95.95 0 0 1 .801.44 1 1 0 0 1 .08.928l-4.39 10.26a.963.963 0 0 1-.881.587Z"
-                    fill="#fff"
-                  />
-                </svg>
-                Add to Cart
-              </button>
-            </div>
-          </a>
-          <div class="product__content">
-            <h3 class="product__content-name">ELLERY X M'O CAPSULE</h3>
-            <p class="product__content-description">
-              Known for her sculptural takes on&nbsp;traditional
-              tailoring,Australian arbiter of&nbsp;cool Kym Ellery teams
-              up&nbsp;with Moda Operandi.
-            </p>
-            <h3 class="product__content-price">$52.00</h3>
-          </div>
-        </div>
-      </div>
     </main>
-
     <footer class="footer">
       <section class="subscription crop">
         <div class="subscription__img">
