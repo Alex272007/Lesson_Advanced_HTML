@@ -154,12 +154,14 @@
         <div class="registr__full-gender">
            <form action="#">  
             <fieldset>
-              <label for="male">
-                <input id="male" type="checkbox" /> &emsp;Male</label
-              >
-              <label for="female">
-                <input id="female" type="checkbox" /> &emsp;Female</label
-              >
+              <div class="radio-group">
+                <input id="male" type="radio"
+                value="male" name="drone" />
+                <label for="male"> Male</label
+              ></div>
+            <div class="radio-group">
+                <input id="female" type="radio" value="female" name="drone" /><label for="female">Female</label
+              ></div>
             </fieldset> 
           </form>
           </div>
@@ -170,16 +172,18 @@
               <label for="email"></label>
               <input
                 id="email"
-                placeholder="email@server.com"
+                placeholder="Email"
                 required
                 pattern="\S+@[a-z]+.[a-z]+"
               />
               <br />
               <label for="password"></label>
               <input 
+              type="password"
                 id="password"
                 placeholder="Password"
                 required
+                minlength="8"
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
               /> 
             </fieldset>
@@ -207,11 +211,12 @@
               and unlock serious perks. Starting with these as&nbsp;soon
               as&nbsp;you join:
             </p>
-            <p class="loyalty__advantages-enum">15% off welcome offer</p>
-            <p class="loyalty__advantages-enum">Free shipping, returns and exchanges on&nbsp;all orders</p>
-            <p class="loyalty__advantages-enum">$10 off a&nbsp;purchase on&nbsp;your birthday</p>
-            <p class="loyalty__advantages-enum">Early access to&nbsp;products</p>
-            <p class="loyalty__advantages-enum">Exclusive offers &amp;&nbsp;rewards</p>
+            <p  class="loyalty__advantages-enum"><svg class="loyalty__advantages-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z" fill="#000"/></svg>15% off welcome offer</p>
+            <p class="loyalty__advantages-enum">
+              <svg class="loyalty__advantages-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z" fill="#000"/></svg>Free shipping, returns and exchanges on&nbsp;all orders</p>
+            <p class="loyalty__advantages-enum"><svg class="loyalty__advantages-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z" fill="#000"/></svg>$10 off a&nbsp;purchase on&nbsp;your birthday</p>
+            <p class="loyalty__advantages-enum"><svg class="loyalty__advantages-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z" fill="#000"/></svg>Early access to&nbsp;products</p>
+            <p class="loyalty__advantages-enum"><svg class="loyalty__advantages-svg" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.803 0H18.09a.777.777 0 0 0-.615.303L7.37 13.283 2.525 7.058a.786.786 0 0 0-.615-.304H.196a.199.199 0 0 0-.154.32l6.713 8.624a.78.78 0 0 0 1.233 0L19.958.318A.197.197 0 0 0 19.804 0Z" fill="#000"/></svg>Exclusive offers &amp;&nbsp;rewards</p>
         </article>
       </section>
     </main>
