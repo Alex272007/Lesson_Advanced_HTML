@@ -113,8 +113,7 @@
     background: $bgSite;
   
     &__container {
-      padding-top: 23px;
-      padding-bottom: 24px;
+      padding: 23px 24px; 
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -143,5 +142,103 @@
     &__social-link:hover {
       color: $colSocModif;
       background-color: $colorful;
+    }
+  }
+
+  @media (min-width: 767px) and (max-width: 1025px) {
+    .container {
+      max-width: 736px;
+    }
+    .subscription {
+      max-height: 612px;
+      &__bg {
+        padding-top: 64px;
+        padding-bottom: 140px;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+      }
+    }
+  
+    .subscribe {
+      gap: 27px;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 768px) {
+    .container {
+      max-width: 344px;
+    }
+    .subscription {
+      max-width: 610px;
+      max-height: 550px;
+  
+      &__bg {
+        padding-top: 50px;
+        padding-bottom: 110px;
+        flex-direction: column;
+        align-items: center;
+        gap: 73px;
+      }
+  
+      &__content {
+        min-width: 320px;
+        height: 194px;
+      }
+  
+      &__text {
+        min-width: 320px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  
+    .crop {
+      width: 375px;
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .subscribe {
+      min-width: 320px;
+      height: 123px;
+      gap: 22px;
+  
+      &_sb {
+        width: 271px;
+  
+        &-text {
+          font-size: 24px;
+          line-height: 153%;
+        }
+  
+        &-content {
+          font-size: 14px;
+          line-height: 153%;
+        }
+      }
+  
+      &__btn {
+        min-width: 310px;
+        height: 47px;
+  
+        &-text {
+          min-width: 233px;
+        }
+  
+        &-btn {
+          min-width: 96px;
+        }
+      }
+    }
+  
+    .footer {
+      max-width: 375px;
+      max-height: 143px;
+  
+      &__container {
+        flex-direction: column-reverse;
+        gap: 40px;
+      }
     }
   }

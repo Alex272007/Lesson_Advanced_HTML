@@ -314,3 +314,25 @@ a {
 @import "../components/info";
 
 @import "../components/footer";
+
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+  .filter-sort {
+    padding-top: 20px;
+    height: 88px;
+    justify-content: space-between;
+  }
+ 
+  .disguise {
+    display: none;
+  }
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+  }
+  .pagination {
+    margin-bottom: 63px;
+  }
+}

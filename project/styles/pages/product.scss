@@ -245,3 +245,19 @@ a {
   }
 }
 @import "../components/footer";
+
+@media (min-width: 767px) and (max-width: 1025px){
+  .container {
+    max-width: 736px;
+  }
+  .collect{
+    transform: none;
+    min-width: 100vw;
+  }
+  .disguise{
+    display: none;
+  }
+  .product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -45,37 +45,29 @@ a {
   align-items: center;
   background: $backBanner;
   width: 100%;
-
   &__img {
     width: 50%;
   }
-
   &__content {
     padding-left: 64px;
-
     & h1 h2 {
       color: $colorContent;
     }
-
     &-title {
       @include txt('Lato', normal,  900, 48px, 58px);
     }
-
     &-heading {
       @include txt('Lato', normal,  700, 32px, 38px);
     }
   }
-
   &__info {
     border-left: $borderInfo solid $colorful;
     padding-left: 19px;
   }
 }
-
 .content {
   flex: 1;
 }
-
 .hiden {
   display: none;
 }
@@ -86,7 +78,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: $gapCategory;
-
   &__catalogs {
     flex: 1 1 calc(33.333% - 20px);
     @include centerColumn();
@@ -96,64 +87,52 @@ a {
     background-size: cover;
     cursor: pointer;
   }
-
   &__catalog-1 {
     background-image: url(/img/middleBlock1.webp);
   }
-
   &__catalog-2 {
     background-image: url(/img/middleBlock2.webp);
   }
-
   &__catalog-3 {
     background-image: url(/img/middleBlock3.webp);
   }
-
   &__catalog-4 {
     min-height: 180px;
     background-image: url(/img/middleBlock4.webp);
   }
-
   &__catalog-darkening {
     background: $backgrCategory;
     width: 100%;
     height: 100%;
     @include centerflex();
   }
-
   &__catalog__darkening-4 {
     background: $backgrCategory;
     width: 100%;
     height: 100%;
     @include centerflex();
   }
-
   &__catalog-text {
     @include txt('Lato', normal,  400, 16px, 19px);
     text-align: center;
     color: $colorText;
   }
-
   &__catalog-colortext {
     color: $colorful;
     font-size: 24px;
   }
 }
-
 .products {
   margin-bottom: 60px;
-
   &__launch {
     text-align: center;
     font-weight: 400;
-
     &-featured {
       margin-bottom: 6px;
       font-size: 30px;
       line-height: 36px;
       color: $colorContent;
     }
-
     &-week {
       font-size: 14px;
       line-height: 17px;
@@ -274,19 +253,15 @@ a {
   .container {
     max-width: 736px;
   }
-
   .navigation {
     padding: 18px 32px;
   }
-
   .banner__content {
     padding-left: 39px;
-
     &-title {
       font-size: 44px;
       line-height: 53px;
     }
-
     &-heading {
       font-size: 24px;
       line-height: 29px;
@@ -295,11 +270,9 @@ a {
 
   .category {
     gap: 19px;
-
     &__catalogs {
       min-height: 167px;
     }
-
     &__catalog-4 {
       min-height: 116px;
     }
@@ -317,11 +290,9 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 48px;
-
     &__detailed-icon {
       margin-bottom: 28px;
     }
-
     &__detailed-middle {
       margin-bottom: 19px;
     }
@@ -370,11 +341,9 @@ a {
     .banner__info {
       white-space: nowrap;
     }
-
     &__content {
       padding-left: 0;
       max-width: 263px;
-
       &-title {
         @include txt('Lato', normal,  900, 38px, 46px);
       }
@@ -389,27 +358,22 @@ a {
     flex-direction: column;
     gap: 32px;
     margin-bottom: 64px;
-
     &__catalogs {
       min-width: 320px;
       min-height: 247px;
       background-repeat: no-repeat;
       background-size: cover;
     }
-
     &__catalog-4 {
       background-position: center;
       background-size: cover;
     }
-
     &__catalog-darkening {
       min-height: 247px;
     }
-
     &__catalog-4 {
       min-height: 111px;
     }
-
     &__catalog__darkening-4 {
       min-height: 111px;
     }
@@ -420,7 +384,6 @@ a {
     flex-direction: column;
     gap: 16px;
     margin-bottom: 41px;
-
     &__card {
       min-width: 320px;
       height: 560px;
@@ -435,20 +398,16 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 46px;
-
     &__detailed {
       min-width: 320px;
       margin-bottom: 27px;
-
       &-middle p {
         min-width: 320px;
         @include txt('Lato', normal,  300, 14px, 17px);
       }
-
       &-icon {
         margin-bottom: 28px;
       }
-
       &-middle {
         margin-bottom: 19px;
       }
@@ -458,7 +417,6 @@ a {
   .subscription {
     max-width: 610px;
     max-height: 550px;
-
     &__bg {
       padding-top: 50px;
       padding-bottom: 110px;
@@ -466,12 +424,10 @@ a {
       align-items: center;
       gap: 73px;
     }
-
     &__content {
       min-width: 320px;
       height: 194px;
     }
-
     &__text {
       min-width: 320px;
       font-size: 18px;
@@ -489,29 +445,23 @@ a {
     min-width: 320px;
     height: 123px;
     gap: 22px;
-
     &_sb {
       width: 271px;
-
       &-text {
         font-size: 24px;
         line-height: 153%;
       }
-
       &-content {
         font-size: 14px;
         line-height: 153%;
       }
     }
-
     &__btn {
       min-width: 310px;
       height: 47px;
-
       &-text {
         min-width: 233px;
       }
-
       &-btn {
         min-width: 96px;
       }
@@ -521,7 +471,6 @@ a {
   .footer {
     max-width: 375px;
     max-height: 143px;
-
     &__container {
       flex-direction: column-reverse;
       gap: 40px;

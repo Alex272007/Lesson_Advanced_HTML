@@ -63,39 +63,40 @@ input {
   box-sizing: border-box;
   margin-bottom: 96px;
   &__full {
+    form fieldset {
+      display: flex;
+      flex-direction: column;
+    }
+    form input {
+      border: 1px solid #a4a4a4;
+    }
     &-info {
       width: 360px;
       height: 149px;
       margin-bottom: 31px;
-      form fieldset {
-        display: flex;
-        flex-direction: column;
-      }
-      form input {
-        border: 1px solid #a4a4a4;
-      }
     }
     &-gender {
       width: 132px;
       height: 17px;
-      box-sizing: border-box;
       @include txt("Lato", normal, 400, 11px, 13px);
       color: #000000;
       margin-bottom: 33px;
-      form fieldset {
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
-      }
-      form input[type="radio"] {
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+      input[type="radio"] {
         width: 17px;
         height: 17px;
-        border: 1px solid $colBorder; 
+        border: 1px solid $colBorder;
+        display: flex;
       }
       .radio-group {
         display: flex;
         align-items: flex-end;
-        gap: 10px; 
+        gap: 10px;
+      }
+      .hide {
+        display: none;
       }
     }
     &-inform {
@@ -127,15 +128,15 @@ input {
       @include txt("Lato", normal, 400, 14px, 17px);
       color: $colorText;
       cursor: pointer;
-      transition: all 0.3s; 
+      transition: all 0.3s;
     }
-    .registr__full-btm:hover{
+    .registr__full-btm:hover {
       background-color: $backTotal;
       color: $colorful;
       border: 1px solid $colorful;
     }
-    .registr__full-btm:hover .registr__full-reg{
-      fill: $colorful; 
+    .registr__full-btm:hover .registr__full-reg {
+      fill: $colorful;
     }
   }
 }
@@ -150,8 +151,7 @@ input {
   }
   &__advantages {
     margin-bottom: 21px;
-    &-enum 
-    {
+    &-enum {
       display: flex;
       align-items: center;
       gap: 22px;
@@ -160,3 +160,22 @@ input {
   }
 }
 @import "../components/footer";
+
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+
+  .registr__full-gender .hide {
+    display: block;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+
+  .loyalty {
+    width: 354px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

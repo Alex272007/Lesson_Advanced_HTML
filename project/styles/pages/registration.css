@@ -85,6 +85,30 @@ a {
   right: -10px;
 }
 
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+  .navigation {
+    padding: 18px 32px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    max-width: 344px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hide {
+    display: none;
+  }
+  .navigation {
+    padding: 18px 16px;
+  }
+}
 .hiden {
   display: none;
 }
@@ -147,10 +171,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1600px;
-  height: 148px;
+  min-height: 10vh;
 }
 .arrivas__new {
+  padding: 59px 0 60px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -189,6 +213,11 @@ a {
   color: #636363;
 }
 
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+}
 fieldset {
   border: none;
 }
@@ -219,22 +248,21 @@ input {
   box-sizing: border-box;
   margin-bottom: 96px;
 }
+.registr__full form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.registr__full form input {
+  border: 1px solid #a4a4a4;
+}
 .registr__full-info {
   width: 360px;
   height: 149px;
   margin-bottom: 31px;
 }
-.registr__full-info form fieldset {
-  display: flex;
-  flex-direction: column;
-}
-.registr__full-info form input {
-  border: 1px solid #a4a4a4;
-}
 .registr__full-gender {
   width: 132px;
   height: 17px;
-  box-sizing: border-box;
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -242,21 +270,23 @@ input {
   line-height: 13px;
   color: #000000;
   margin-bottom: 33px;
-}
-.registr__full-gender form fieldset {
   display: flex;
   justify-content: flex-start;
   gap: 20px;
 }
-.registr__full-gender form input[type=radio] {
+.registr__full-gender input[type=radio] {
   width: 17px;
   height: 17px;
   border: 1px solid #A4A4A4;
+  display: flex;
 }
 .registr__full-gender .radio-group {
   display: flex;
   align-items: flex-end;
   gap: 10px;
+}
+.registr__full-gender .hide {
+  display: none;
 }
 .registr__full-inform {
   width: 360px;
@@ -454,8 +484,7 @@ input {
   background: #222222;
 }
 .footer__container {
-  padding-top: 23px;
-  padding-bottom: 24px;
+  padding: 23px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -486,4 +515,103 @@ input {
 .footer__social-link:hover {
   color: #fff;
   background-color: #F16D7F;
+}
+
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+  .subscription {
+    max-height: 612px;
+  }
+  .subscription__bg {
+    padding-top: 64px;
+    padding-bottom: 140px;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .subscribe {
+    gap: 27px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .container {
+    max-width: 344px;
+  }
+  .subscription {
+    max-width: 610px;
+    max-height: 550px;
+  }
+  .subscription__bg {
+    padding-top: 50px;
+    padding-bottom: 110px;
+    flex-direction: column;
+    align-items: center;
+    gap: 73px;
+  }
+  .subscription__content {
+    min-width: 320px;
+    height: 194px;
+  }
+  .subscription__text {
+    min-width: 320px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .crop {
+    width: 375px;
+    height: auto;
+    overflow: hidden;
+  }
+  .subscribe {
+    min-width: 320px;
+    height: 123px;
+    gap: 22px;
+  }
+  .subscribe_sb {
+    width: 271px;
+  }
+  .subscribe_sb-text {
+    font-size: 24px;
+    line-height: 153%;
+  }
+  .subscribe_sb-content {
+    font-size: 14px;
+    line-height: 153%;
+  }
+  .subscribe__btn {
+    min-width: 310px;
+    height: 47px;
+  }
+  .subscribe__btn-text {
+    min-width: 233px;
+  }
+  .subscribe__btn-btn {
+    min-width: 96px;
+  }
+  .footer {
+    max-width: 375px;
+    max-height: 143px;
+  }
+  .footer__container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+  .registr__full-gender .hide {
+    display: block;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .loyalty {
+    width: 354px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }/*# sourceMappingURL=registration.css.map */

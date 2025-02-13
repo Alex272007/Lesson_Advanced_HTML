@@ -44,16 +44,19 @@ a {
   padding-top: 96px;
   margin-bottom: 128px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+
   .option {
     padding-top: 32px;
   }
   .colorful {
     color: $colorful;
   }
-
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   .card {
     width: 652px;
     height: 306px;
@@ -99,6 +102,32 @@ a {
       cursor: pointer;
     }
   }
+
+  .option {
+    width: 652px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    &__clear {
+      width: 235px;
+      background: $backTotal;
+      border: 1px solid $colForm;
+      cursor: pointer;
+    }
+    &__continue {
+      width: 225px;
+      background: $backTotal;
+      border: 1px solid $colForm;
+      cursor: pointer;
+    }
+  }
+
+  .product-shipping {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+  }
+
   .shipping-adr {
     width: 360px;
     height: 272px;
@@ -126,8 +155,7 @@ a {
       padding-left: 17px;
     }
     .get {
-      width: 101px;
-      height: 35px;
+      padding: 11px 15px;
       background: $backTotal;
       border: 1px solid $colForm;
       @include txt("Lato", normal, 400, 11px, 13px);
@@ -157,8 +185,12 @@ a {
     &__line {
       width: 275px;
       height: 1px;
+      padding-right: 9px;
       background: #e2e2e2;
       margin-bottom: 17px;
+    }
+    &__button {
+      padding-right: 9px;
     }
     &__btm {
       width: 273px;
@@ -176,24 +208,42 @@ a {
       border: 1px solid $colorful;
     }
   }
-  .option {
-    width: 652px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    &__clear {
-      width: 235px;
-      background: $backTotal;
-      border: 1px solid $colForm;
-      cursor: pointer;
-    }
-    &__continue {
-      width: 225px;
-      background: $backTotal;
-      border: 1px solid $colForm;
-      cursor: pointer;
-    }
-  }
 }
 
 @import "../components/footer";
+
+@media (min-width: 767px) and (max-width: 1025px) {
+  .container {
+    max-width: 736px;
+  }
+  .product {
+    flex-direction: column;
+    gap: 64px;
+    .card__content::after {
+      content: url(/img/cross.svg);
+      position: absolute;
+      top: 30px;
+      right: -130px;
+      cursor: pointer;
+    }
+    .option{
+      justify-content: flex-end;
+      gap: 48px;
+    }
+    .product-shipping {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+
+  .card {
+    min-width: 734px;
+  }
+
+  .checkout {
+    padding-top: 45px;
+    position: relative;
+    top: 40px;
+  }
+}

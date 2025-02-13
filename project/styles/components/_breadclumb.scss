@@ -1,12 +1,11 @@
 .breadclumb {
-    background: #f8f3f4;
+    background: #f8f3f4; 
   }
   .arrivas {
     @include spacebeet();
-    width: 1600px;
-    height: 148px;
-  
+    min-height: 10vh;
     &__new {
+      padding: 59px 0 60px;
       @include txt('Lato', normal,  400, 24px, 29px);
       color: $colorful;
     }
@@ -35,5 +34,11 @@
         margin: 0 10px;
         color: $colArivas;
       }
+    }
+  }
+  
+  @media (min-width: 767px) and (max-width: 1025px) {
+    .container {
+      max-width: 736px;
     }
   }

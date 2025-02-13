@@ -126,8 +126,8 @@
 
       <section class="registr container">
         <div class="registr__full" >
-        <div class="registr__full-info">
           <form action="#">
+          <div class="registr__full-info">
             <fieldset>
               <legend class="info">Your Name</legend>
               <label for="name"></label>
@@ -149,24 +149,25 @@
                 pattern="\S+[А-яа-я]"
               />
             </fieldset>
-          </form>
           </div>
-        <div class="registr__full-gender">
-           <form action="#">  
-            <fieldset>
+          <div class="registr__full-gender">
               <div class="radio-group">
                 <input id="male" type="radio"
                 value="male" name="drone" />
-                <label for="male"> Male</label
-              ></div>
-            <div class="radio-group">
-                <input id="female" type="radio" value="female" name="drone" /><label for="female">Female</label
-              ></div>
-            </fieldset> 
-          </form>
+                <label for="male">Male</label>
+              </div>
+              <div class="radio-group">
+                <input id="female" type="radio" value="female" name="drone"/>
+                <label for="female">Female
+                </label>
+            </div>
+            <div class="radio-group hide">
+              <input id="other" type="radio" value="other" name="drone"/>
+              <label for="female">Other
+              </label>
+          </div>    
           </div>
-        <div class="registr__full-inform"> 
-           <form action="#"> 
+          <div class="registr__full-inform"> 
             <fieldset> 
               <legend>Login details</legend>
               <label for="email"></label>
@@ -187,22 +188,18 @@
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$"
               /> 
             </fieldset>
-          </form>
           </div>
               <p class="registr__full-psvtext">
                 Please use 8&nbsp;or more characters, with at&nbsp;least
                 1&nbsp;number and a&nbsp;mixture of&nbsp;uppercase and lowercase
                 letters
               </p>
-              
-               <div >
-                <form action="#"> 
+               <div class="registr__full-button">
                 <button input class="registr__full-btm" type="submit" value="" >JOIN NOW 
                   <svg class="registr__full-reg" width="17" height="10" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.54.208a.709.709 0 0 1 1.003 0l4.25 4.25a.708.708 0 0 1 0 1.003l-4.25 4.25a.71.71 0 0 1-1.003-1.003l3.75-3.749-3.75-3.748a.708.708 0 0 1 0-1.003Z" /><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.96a.708.708 0 0 1 .708-.709h14.875a.708.708 0 0 1 0 1.417H.708A.708.708 0 0 1 0 4.959Z" /></svg>
                 </button>
-              
-          </form>
-        </div>
+              </div>
+        </form>  
       </div>
         <article class="loyalty">
             <p class="loyalty-goal">LOYALTY HAS ITS PERKS</p>
