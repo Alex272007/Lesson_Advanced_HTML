@@ -190,7 +190,7 @@ a {
       margin-bottom: 17px;
     }
     &__button {
-      padding-right: 9px;
+      padding-right: 8px;
     }
     &__btm {
       width: 273px;
@@ -212,7 +212,7 @@ a {
 
 @import "../components/footer";
 
-@media (min-width: 767px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .container {
     max-width: 736px;
   }

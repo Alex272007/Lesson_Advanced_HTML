@@ -249,7 +249,7 @@ a {
 
 @import "../components/footer";
 
-@media (min-width: 767px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .container {
     max-width: 736px;
   }
@@ -314,7 +314,7 @@ a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 344px;
   }

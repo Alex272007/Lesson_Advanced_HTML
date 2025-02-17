@@ -65,7 +65,10 @@ a {
   box-sizing: border-box;
   position: relative;
   z-index: 10;
-
+  &__svg{
+    width: 15px;
+    height: 10px;
+  }
   &__content {
     background-color: $backTotal;
     padding-top: 0;
@@ -77,6 +80,7 @@ a {
   &[open] {
     background: $backTotal;
     box-shadow: $boxMenuActiv;
+    z-index: 10;
   }
   &[open] .filter__content {
     box-shadow: $boxMenuActiv;
@@ -174,14 +178,11 @@ a {
   grid-template-rows: repeat(3, 1fr);
   gap: $gapProduct;
   margin-bottom: 48px;
-
   &__card {
     background: $backCard;
-
     &-image {
       position: relative;
     }
-
     &-bg {
       content: "";
       position: absolute;
@@ -206,7 +207,6 @@ a {
         gap: 4px;
       }
     }
-
     &-image:hover &-bg {
       opacity: 1;
     }
@@ -315,7 +315,7 @@ a {
 
 @import "../components/footer";
 
-@media (min-width: 767px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .container {
     max-width: 736px;
   }
@@ -324,7 +324,6 @@ a {
     height: 88px;
     justify-content: space-between;
   }
- 
   .disguise {
     display: none;
   }
@@ -334,5 +333,46 @@ a {
   }
   .pagination {
     margin-bottom: 63px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 360px;
+  }
+  .filter-sort {
+    height: 88px;
+    justify-content: space-between;
+  }
+  .filter{
+    &__svg{
+      width: 38px;
+      height: 25px;
+    }
+    &__content{
+      position: absolute;
+      
+    }
+  }
+  
+  .sort{
+    width: 260px;
+    white-space: nowrap;
+    gap: 23px;
+    &__heading {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .disguise {
+    display: none;
+  }
+  .product { 
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+  .pagination {
+    margin-bottom: 64px;
   }
 }

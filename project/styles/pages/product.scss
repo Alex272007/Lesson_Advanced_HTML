@@ -44,7 +44,7 @@ a {
   background: $backSlid;
   border: 1px solid $bordSlid;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 
   &__transition-lf {
@@ -90,7 +90,7 @@ a {
   &__gender {
     padding-top: 64px;
     margin-bottom: 12px;
-    @include txt('Lato', normal,  400, 14px, 17px);
+    @include txt("Lato", normal, 400, 14px, 17px);
     color: $colorful;
   }
   &__dash {
@@ -102,23 +102,22 @@ a {
   }
   &__advert {
     margin-bottom: 49px;
-    @include txt('Lato', normal,  300, 18px, 22px);
+    @include txt("Lato", normal, 300, 18px, 22px);
     color: $colAdvert;
   }
   &__descript {
     margin-bottom: 32px;
-    @include txt('Lato', normal,  400, 14px, 17px);
+    @include txt("Lato", normal, 400, 14px, 17px);
     text-align: center;
     color: $coldesc;
   }
   &__price {
     margin-bottom: 64px;
-    @include txt('Lato', normal,  400, 24px, 29px);
+    @include txt("Lato", normal, 400, 24px, 29px);
     color: $colorful;
   }
   &__line {
-    width: 642px;
-    height: 1px;
+    width: 40vw;
     background: $bordSlid;
     border: 1px solid $bordSlid;
     margin-bottom: 64px;
@@ -127,7 +126,7 @@ a {
     display: flex;
     justify-content: space-around;
     gap: 23px;
-    @include txt('Lato', normal,  400, 14px, 17px);
+    @include txt("Lato", normal, 400, 14px, 17px);
     color: $colorList;
     margin-bottom: 49px;
 
@@ -148,7 +147,7 @@ a {
     align-items: center;
     gap: 23px;
     border: 1px solid $colorful;
-    @include txt('Lato', normal,  400, 16px, 19px);
+    @include txt("Lato", normal, 400, 16px, 19px);
     background: none;
     color: $colorful;
     cursor: pointer;
@@ -158,13 +157,13 @@ a {
 
   .collect__add-btm:hover {
     background-color: $colorful;
-    color: $backTotal; 
+    color: $backTotal;
   }
-  .collect__add-btm:hover .collect__add-catr{
+  .collect__add-btm:hover .collect__add-catr {
     fill: #fff;
   }
 }
- 
+
 .product {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -228,36 +227,71 @@ a {
 
     &-name {
       margin-bottom: 13px;
-      @include txt('Lato', normal,  400, 13px, 16px);
+      @include txt("Lato", normal, 400, 13px, 16px);
       color: $colorContName;
     }
 
     &-description {
       margin-bottom: 16px;
-      @include txt('Lato', normal,  400, 14px, 17px);
+      @include txt("Lato", normal, 400, 14px, 17px);
       color: $colorContDesc;
     }
 
     &-price {
-      @include txt('Lato', normal,  400, 16px, 19px);
+      @include txt("Lato", normal, 400, 16px, 19px);
       color: $colorful;
     }
   }
 }
 @import "../components/footer";
 
-@media (min-width: 767px) and (max-width: 1025px){
+@media (min-width: 768px) and (max-width: 1025px) {
   .container {
     max-width: 736px;
   }
-  .collect{
+  .collect {
     transform: none;
     min-width: 100vw;
   }
-  .disguise{
+  .disguise {
     display: none;
   }
   .product {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 344px;
+  }
+  .collect {
+    transform: none;
+    min-width: 100vw;
+    br {
+      display: none;
+    }
+    &__descript {
+      width: 326px;
+      height: 105px;
+      @include txt("Lato", normal, 400, 14px, 20px);
+    }
+    &__price {
+      margin-bottom: 32px;
+    }
+    &__line {
+      margin-bottom: 49px;
+    }
+    &__choice {
+      @include txt("Lato", normal, 400, 10px, 12px);
+      margin-bottom: 64px;
+    }
+  }
+  .conceal{
+    display: none;
+  }
+  .product {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 64px;
   }
 }

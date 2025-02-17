@@ -61,7 +61,7 @@ input {
   justify-content: space-between;
   padding-top: 64px;
   box-sizing: border-box;
-  margin-bottom: 96px;
+  margin-bottom: 80px;
   &__full {
     form fieldset {
       display: flex;
@@ -161,7 +161,7 @@ input {
 }
 @import "../components/footer";
 
-@media (min-width: 767px) and (max-width: 1025px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .container {
     max-width: 736px;
   }
@@ -175,7 +175,30 @@ input {
 
   .loyalty {
     width: 354px;
-    font-size: 16px;
-    line-height: 19px;
+    @include txt("Lato", normal, 400, 16px, 19px);
   }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 359px;
+  }
+  input{
+    width: 359px;
+  }
+  .registr {
+    
+    flex-direction: column;
+    gap: 40px;
+    &__full-gender .hide {
+      display: block;
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+    }
+  }
+  .loyalty {
+    max-width: 358px;
+    @include txt("Lato", normal, 400, 16px, 19px);
+    } 
 }

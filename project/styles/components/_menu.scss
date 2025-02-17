@@ -13,6 +13,7 @@
     background: $backTotal;
     box-shadow: $boxMenuActiv;
     margin-bottom: 24px;
+    z-index: 100; 
   
     &__all {
       display: flex;
