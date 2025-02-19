@@ -264,10 +264,6 @@ a {
   position: relative;
   z-index: 10;
 }
-.filter__svg {
-  width: 15px;
-  height: 10px;
-}
 .filter__content {
   background-color: #FFFFFF;
   padding-top: 0;
@@ -889,9 +885,9 @@ a {
     height: 88px;
     justify-content: space-between;
   }
-  .filter__svg {
-    width: 38px;
-    height: 25px;
+  .filter svg {
+    transform: scale(3);
+    transform-origin: 50% 50%;
   }
   .filter__content {
     position: absolute;
