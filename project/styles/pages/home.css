@@ -268,9 +268,6 @@ a {
   font-size: 24px;
 }
 
-.products {
-  margin-bottom: 60px;
-}
 .products__launch {
   text-align: center;
   font-weight: 400;
@@ -399,7 +396,7 @@ a {
 
 .info {
   background: #222224;
-  min-height: 100vh;
+  min-height: 341px;
 }
 
 .information {
@@ -414,6 +411,7 @@ a {
   align-items: center;
   text-align: center;
   color: #FBFBFB;
+  box-sizing: border-box;
 }
 .information__detailed-icon {
   margin-bottom: 26px;
@@ -753,6 +751,9 @@ a {
     gap: 16px;
     margin-bottom: 33px;
   }
+  .product__btm {
+    margin-bottom: 65px;
+  }
   .information {
     flex-direction: column;
     align-items: center;
@@ -853,6 +854,9 @@ a {
   .product__card {
     min-width: 320px;
     height: 560px;
+  }
+  .product__btm {
+    margin-bottom: 96px;
   }
   .info {
     max-width: 375px;

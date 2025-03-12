@@ -537,7 +537,7 @@ a {
 
 .info {
   background: #222224;
-  min-height: 100vh;
+  min-height: 341px;
 }
 
 .information {
@@ -552,6 +552,7 @@ a {
   align-items: center;
   text-align: center;
   color: #FBFBFB;
+  box-sizing: border-box;
 }
 .information__detailed-icon {
   margin-bottom: 26px;

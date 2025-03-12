@@ -123,7 +123,6 @@ a {
   }
 }
 .products {
-  margin-bottom: 60px;
   &__launch {
     text-align: center;
     font-weight: 400;
@@ -284,6 +283,9 @@ a {
     grid-template-rows: repeat(2, 1fr);
     gap: 16px;
     margin-bottom: 33px;
+    &__btm {
+      margin-bottom: 65px;
+    }
   }
 
   .information {
@@ -387,6 +389,9 @@ a {
     &__card {
       min-width: 320px;
       height: 560px;
+    }
+    &__btm {
+      margin-bottom: 96px;
     }
   }
   .info {

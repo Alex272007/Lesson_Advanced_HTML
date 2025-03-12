@@ -1,6 +1,6 @@
 .info {
     background: $bgInform;
-    min-height: 100vh;
+    min-height: 341px;
   }
   
   .information {
@@ -12,7 +12,7 @@
     &__detailed {
       @include columntext();
       color: $colorInform;
-  
+      box-sizing: border-box;
       &-icon {
         margin-bottom: 26px;
       }
