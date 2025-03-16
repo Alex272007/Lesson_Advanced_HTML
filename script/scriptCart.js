@@ -1,4 +1,4 @@
-const url = "../dataCart.json";
+const url = "../json/dataCart.json";
 async function getDataCart(url) {
   try {
     const response = await fetch(url);

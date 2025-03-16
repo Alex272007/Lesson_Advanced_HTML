@@ -1,4 +1,4 @@
-const url = "../dataHome.json";
+const url = "/json/dataHome.json";
 async function getDataHome(url) {
   try {
     const response = await fetch(url);
