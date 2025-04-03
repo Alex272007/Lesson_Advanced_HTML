@@ -1,4 +1,4 @@
-const url = "../script/data.js";
+const url = "/script/data.js";
 async function getDataCart(url) {
   try {
     const response = await fetch(url);
@@ -11,21 +11,22 @@ async function getDataCart(url) {
 
 document.addEventListener("DOMContentLoaded", async (e) => {
   const data = await getDataCart(url);
-  const list = document.querySelector(".product_cards");
+  const list = document.querySelector(".product-cards");
   data.forEach((element) => {
     list.insertAdjacentHTML(
       "beforeend",
       `
-          <div class="card">
+          <div class="cards">
           <div class="card__image">
             <img src="${element.img}" alt="${element.title}" class="stretch-image">
-          </div>
+          </div>+
+          -
           <div class="card__content">
             <div class="card__content-name">${element.title}</div>
             <div class="card__content-description">
               <p class="price">Price: <span class="colorful">$${element.price}</span></p>
-              <p class="col">Color: ${element.color}</p>
-              <p class="size">Size: ${element.size}</p>
+              <p class="col">Color: $</p>
+              <p class="size">Size: $</p>
 
               <form class="quan">
                 <label for="quantity">Quantity:</label>
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async (e) => {
                   name="quantity"
                   min="1"
                   max="100"
-                  value="${element.count}"
+                  value="$"
                 />
               </form>
             </div>
