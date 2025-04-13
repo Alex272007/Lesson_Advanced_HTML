@@ -39,7 +39,7 @@ data.forEach((dataProduct) => {
   productContentDiscrEl.textContent = dataProduct.content;
   const productContentPriceEl = document.createElement("h2");
   productContentPriceEl.classList.add("product__content-price");
-  productContentPriceEl.textContent = dataProduct.price;
+  productContentPriceEl.textContent =  dataProduct.price;
 
   productEl.appendChild(productCardEl);
   productCardEl.appendChild(productCardImgEl);
@@ -53,4 +53,24 @@ data.forEach((dataProduct) => {
   productContentEl.appendChild(productContentNameEl);
   productContentEl.appendChild(productContentDiscrEl);
   productContentEl.appendChild(productContentPriceEl);
+
+  productBtmEl.addEventListener('click', () => {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+  
+    cart.push({
+      title: dataProduct.title,
+      price: dataProduct.price,
+      img: dataProduct.img,
+      color: dataProduct.color,
+      size: dataProduct.size,
+      count: 1
+    });
+  
+    // Сохраняем обратно в localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+  
+    // Уведомление о добалении в крозину
+    alert(`Добавлено в корзину`);
+  });
+  
 });

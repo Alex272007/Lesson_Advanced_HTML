@@ -19,8 +19,7 @@ document.addEventListener("DOMContentLoaded", async (e) => {
           <div class="cards">
           <div class="card__image">
             <img src="${element.img}" alt="${element.title}" class="stretch-image">
-          </div>+
-          -
+          </div>
           <div class="card__content">
             <div class="card__content-name">${element.title}</div>
             <div class="card__content-description">

@@ -262,6 +262,9 @@ a {
 .product .colorful {
   color: #F16D7F;
 }
+.product .gray {
+  color: #6F6E6E;
+}
 .product .card {
   width: 652px;
   height: 306px;
